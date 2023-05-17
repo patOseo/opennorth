@@ -2,6 +2,49 @@
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
 
+// COLORS
+$hyperblue: #2E16BF;
+$deepblue: #00078A;
+$purple: #9D31CA;
+$red: #F94A2D;
+$lightgrey: #F2F2F2;
+$darkgrey: #4F4F4F;
+$white: #ffffff;
+$black: #000000;
 
-$purple: #5533ff; // Thats a sample how you could change a BootStrap variable.
-$primary: $purple;  // Once we've changed the value, we'll also make it the primary brand color.
+$primary: $hyperblue;
+$secondary: $red;
+
+$body-bg: $lightgrey !default;
+$body-color: $primary !default;
+
+// GRADIENTS
+$grad1: linear-gradient(56.06deg, $deepblue 0%, $hyperblue 25.52%, $red 90%);
+
+// TYPOGRAPHY
+$font-family-sans-serif: 'Exo', sans-serif;
+$btn-font-family: 'Inconsolata', sans-serif;
+
+// BUTTONS
+$btn-font-weight: 700;
+
+// SITE WIDTHS
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px, 
+  xxl: 1400px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1380px
+) !default;
+
+// NAV LINKS
+$navbar-nav-link-padding-x: 1.25rem;
