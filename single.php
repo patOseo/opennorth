@@ -14,14 +14,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="single-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+	<div class="<?php echo esc_attr( $container ); ?> px-lg-5" id="content" tabindex="-1">
 
 		<div class="row">
-
-			<?php
-			// Do the left sidebar check and open div#primary.
-			get_template_part( 'global-templates/left-sidebar-check' );
-			?>
 
 			<main class="site-main" id="main">
 
@@ -32,12 +27,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 				}
 				?>
 
-			</main>
+				<?php get_template_part('global-templates/newsletter'); ?>
 
-			<?php
-			// Do the right sidebar check and close div#primary.
-			get_template_part( 'global-templates/right-sidebar-check' );
-			?>
+				<?php get_template_part('global-templates/cta-footer'); ?>
+
+			</main>
 
 		</div><!-- .row -->
 

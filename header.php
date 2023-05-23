@@ -25,14 +25,24 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
+	<?php if(is_single()): ?>
+		<div class="header-section mb-5 bg-deepblue text-white">
+	<?php endif; ?>
+		
+		<!-- ******************* The Navbar Area ******************* -->
+		<header id="wrapper-navbar" class="pt-4">
 
-	<!-- ******************* The Navbar Area ******************* -->
-	<header id="wrapper-navbar">
+			<a class="skip-link <?php echo understrap_get_screen_reader_class( true ); ?>" href="#content">
+				<?php esc_html_e( 'Skip to content', 'understrap' ); ?>
+			</a>
 
-		<a class="skip-link <?php echo understrap_get_screen_reader_class( true ); ?>" href="#content">
-			<?php esc_html_e( 'Skip to content', 'understrap' ); ?>
-		</a>
+			<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
 
-		<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
-
-	</header><!-- #wrapper-navbar -->
+		</header><!-- #wrapper-navbar -->
+	
+	<?php if(is_single()): ?>
+			<div class="container px-lg-5 pt-5">
+				<?php get_template_part('loop-templates/content', 'header'); ?>
+			</div>
+		</div>
+	<?php endif; ?>

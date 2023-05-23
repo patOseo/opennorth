@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 <div class="container px-lg-0">
-	<nav id="main-nav" class="d-flex justify-content-between navbar navbar-expand-xl navbar-light bg-white mt-4" aria-labelledby="main-nav-label">
+	<nav id="main-nav" class="d-flex justify-content-between navbar navbar-expand-xl navbar-light bg-white" aria-labelledby="main-nav-label">
 
 		<h2 id="main-nav-label" class="screen-reader-text">
 			<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
