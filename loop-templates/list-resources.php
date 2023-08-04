@@ -2,7 +2,7 @@
 if ($query->have_posts()):
     while ($query->have_posts()): $query->the_post();
 ?>
-<div class="row resource-row align-items-center border-bottom <?php if(get_row_index() == 1) { echo 'border-top'; } ?> py-5">
+<div class="row resource-row align-items-center border-bottom <?php if($query->current_post === 0) { echo 'border-top'; } ?> py-5">
     <div class="col-lg-9">
         <h2 class="mb-4 mb-lg-0 fw-normal"><a class="text-decoration-none link-light" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
     </div>

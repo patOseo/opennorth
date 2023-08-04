@@ -86,7 +86,7 @@ if ( ! function_exists( 'understrap_pagination' ) ) {
 					<li class="page-item <?php echo strpos( $link, 'current' ) ? 'active' : ''; ?>">
 						<?php
 						$search  = array( 'page-numbers', 'dots' );
-						$replace = array( 'page-link', 'disabled dots' );
+						$replace = array( 'page-link me-2 px-3 py-2', 'disabled dots' );
 						echo str_replace( $search, $replace, $link ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 						?>
 					</li>

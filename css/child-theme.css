@@ -12124,6 +12124,10 @@ body a {
   z-index: -1;
 }
 
+.resource-row {
+  border-color: rgba(255, 255, 255, 0.35) !important;
+}
+
 .lang-selector .lang-btn {
   padding: 6px 10px 4px;
   border-radius: 4px;
@@ -12220,6 +12224,17 @@ body a {
   cursor: pointer;
 }
 
+.pagination .page-item .page-link {
+  border-width: 0;
+  border-radius: 4px;
+  background-color: #2E16BF;
+  color: #ffffff;
+}
+.pagination .page-item.active .page-link {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .block-tabs .block-tab {
   cursor: pointer;
   transition: 0.2s;
@@ -12301,6 +12316,9 @@ article.type-post .entry-content h1, article.type-post .entry-content .h1, artic
 }
 article.type-post .entry-content p {
   margin-bottom: 2rem;
+}
+article.type-post .entry-content strong {
+  font-weight: 600;
 }
 
 .has-blue-color,
