@@ -1,3 +1,20 @@
 .btn-secondary {
     color: $white;
 }
+
+.wp-block-buttons {
+    .wp-block-button {
+        .wp-block-button__link.wp-element-button {
+            background-color: $secondary !important;
+            color: $white !important;
+            border-radius: .5rem !important;
+            border-width: 0 !important;
+            font-family: $font-family-monospace !important;
+            transition: background-color .2s;
+
+            &:hover {
+                background-color: shade-color($secondary, 10%) !important;
+            }
+        }
+    }
+}
