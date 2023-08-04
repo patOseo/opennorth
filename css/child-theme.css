@@ -12296,6 +12296,10 @@ body a {
   }
 }
 
+article.type-post .entry-content p {
+  margin-bottom: 2rem;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;

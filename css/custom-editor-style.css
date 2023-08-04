@@ -12435,6 +12435,10 @@ body a {
   }
 }
 
+article.type-post .entry-content p {
+  margin-bottom: 2rem;
+}
+
 .components-circular-option-picker__option {
   border-radius: 50%;
 }
