@@ -19,39 +19,28 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<div class="wrapper" id="page-wrapper">
+<div class="wrapper uk-animation-slide-bottom-small" id="page-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+	<div class="container-fluid" id="content" tabindex="-1">
 
-		<div class="row">
-
-			<?php
-			// Do the left sidebar check and open div#primary.
-			get_template_part( 'global-templates/left-sidebar-check' );
-			?>
-
-			<main class="site-main" id="main">
-
-				<?php
-				while ( have_posts() ) {
-					the_post();
-					get_template_part( 'loop-templates/content', 'page' );
-
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					}
-				}
-				?>
-
-			</main>
+		<main class="site-main" id="main">
 
 			<?php
-			// Do the right sidebar check and close div#primary.
-			get_template_part( 'global-templates/right-sidebar-check' );
+			while ( have_posts() ) {
+				the_post();
+				get_template_part( 'loop-templates/content', 'page' );
+			}
 			?>
 
-		</div><!-- .row -->
+		</main>
+
+		<?php if(get_field('include_newsletter')): ?>
+			<?php get_template_part('global-templates/newsletter'); ?>
+		<?php endif; ?>
+
+		<?php if(get_field('include_cta')): ?>
+			<?php get_template_part('global-templates/cta-footer'); ?>
+		<?php endif; ?>
 
 	</div><!-- #content -->
 

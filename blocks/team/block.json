@@ -1,0 +1,13 @@
+{
+    "name": "acf/team",
+    "title": "Team",
+    "description": "A custom block to show the Open North team and board members.",
+    "category": "opennorth",
+    "icon": "businessperson",
+    "keywords": ["team", "board", "members"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "team.php"
+    },
+    "align": "full"
+}

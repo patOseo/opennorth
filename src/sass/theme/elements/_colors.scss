@@ -1,3 +1,13 @@
+// Text
+.text-deepblue {
+    color: $deepblue;
+}
+
+.text-darkgrey {
+    color: $darkgrey;
+}
+
+// Backgrounds
 .bg-deepblue {
     background-color: $deepblue;
 }
@@ -5,3 +15,14 @@
 .bg-lightgrey {
     background-color: $lightgrey;
 }
+
+// Gradients
+.bg-gradient-blue {
+    background: linear-gradient(68.61deg, $hyperblue 0%, $deepblue 100%);
+}
+
+.bg-gradient-red {
+    background: linear-gradient(180deg, $red 0%, #E42807 100%);
+}
+
+

@@ -2,6 +2,19 @@
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
 
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 1.875,
+  6: $spacer * 3,
+) !default;
+// scss-docs-end spacer-variables-maps
+
 // COLORS
 $hyperblue: #2E16BF;
 $deepblue: #00078A;
@@ -19,14 +32,38 @@ $body-bg: $lightgrey !default;
 $body-color: $deepblue !default;
 
 // GRADIENTS
-$grad1: linear-gradient(56.06deg, $deepblue 0%, $hyperblue 25.52%, $red 90%);
+$grad1: linear-gradient(20deg, $deepblue 0%, $hyperblue 25.52%, $red 90%);
 
 // TYPOGRAPHY
 $font-family-sans-serif: 'Exo', sans-serif;
-$btn-font-family: 'Inconsolata', sans-serif;
+$font-family-monospace: 'Inconsolata', sans-serif;
+$btn-font-family: $font-family-monospace;
+$headings-margin-bottom: $spacer !default;
+
+// LINKS
+$link-color: $red;
+
+// BORDERS
+$border-radius:               .25rem !default; // rounded-1 or rounded
+$border-radius-sm:            .25rem !default; // rounded-2
+$border-radius-lg:            .5rem !default; // rounded-3
+$border-radius-xl:            1rem !default; // rounded-4
+$border-radius-2xl:           2rem !default; // rounded-5
 
 // BUTTONS
 $btn-font-weight: 700;
+$btn-line-height: 1;
+$btn-padding-y:               .75rem !default;
+$btn-padding-x:               1.125rem !default;
+$btn-border-radius:           $border-radius-sm !default;
+$btn-border-radius-sm:        $border-radius-sm !default;
+$btn-border-radius-lg:        $border-radius-sm !default;
+
+// INPUTS
+$input-btn-font-family: 'Inconsolata', sans-serif;
+$input-font-family: 'Inconsolata', sans-serif;
+$input-btn-border-color: $hyperblue;
+$input-btn-border-width: 2px;
 
 // SITE WIDTHS
 $grid-breakpoints: (

@@ -1,0 +1,24 @@
+$scale: (
+  sm: 1.025,
+  md: 1.1,
+  lg: 1.25,
+  xl: 1.5
+);
+
+.scale-up {
+    transition: .2s;
+    &:hover {
+        transform: scale(map-get($scale, sm));
+    
+        &.scale-up-md {
+            transform: scale(map-get($scale, md));
+        }
+        &.scale-up-lg {
+            transform: scale(map-get($scale, lg));
+        }
+        &.scale-up-xl {
+            transform: scale(map-get($scale, xl));
+        }
+    }
+}
+

@@ -1,0 +1,13 @@
+{
+    "name": "acf/expertise-panel",
+    "title": "Expertise Panel",
+    "description": "A custom block for the Open North expertise panel.",
+    "category": "opennorth",
+    "icon": "columns",
+    "keywords": ["expertise", "panel"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "expertise-panel.php"
+    },
+    "align": "full"
+}

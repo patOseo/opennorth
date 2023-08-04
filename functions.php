@@ -94,5 +94,15 @@ function understrap_child_customize_controls_js() {
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
 
 
-// Theme Functions
+// Custom Theme Functions
+@require_once('functions/dashboard.php');
+@require_once('functions/image-sizes.php');
+@require_once('functions/acf-options.php');
 @require_once('functions/body-classes.php');
+@require_once('functions/menu-classes.php');
+@require_once('functions/gform-classes.php');
+@require_once('functions/lang.php');
+@require_once('functions/register-blocks.php');
+@require_once('functions/ajax-filtering-courses.php');
+@require_once('functions/ajax-filtering-resources.php');
+@require_once('functions/post-creation.php');

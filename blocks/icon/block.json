@@ -1,0 +1,16 @@
+{
+    "name": "acf/icon",
+    "title": "SVG Icon",
+    "description": "A custom block to show an SVG icon.",
+    "category": "opennorth",
+    "icon": "format-image",
+    "keywords": ["svg", "icon", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "icon.php"
+    },
+    "align": "full",
+    "supports": {
+        "color": true
+    }
+}

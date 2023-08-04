@@ -3,6 +3,18 @@
     "version": 2,
     "settings": {
         "typography": {
+            "fontFamilies": [
+				{
+					"fontFamily": "Exo, sans-serif",
+					"slug": "exo",
+					"name": "Exo"
+				},
+				{
+					"fontFamily": "Inconsolata, sans-serif",
+					"slug": "inconsolata",
+					"name": "Inconsolata"
+				}
+			],
             "fontWeight": true
         },
         "color": {

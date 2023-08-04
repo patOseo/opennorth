@@ -1,0 +1,13 @@
+{
+    "name": "acf/values",
+    "title": "Values Tabs",
+    "description": "A custom block to show Open North values in tabs.",
+    "category": "opennorth",
+    "icon": "table-row-after",
+    "keywords": ["tabs", "values"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "values.php"
+    },
+    "align": "full"
+}

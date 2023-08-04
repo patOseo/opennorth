@@ -5,7 +5,32 @@
 @import "layout/menu";
 @import "layout/footer";
 
+// UIKit
+@import "uikit/variables";
+@import "uikit/animation";
+@import "uikit/slidenav";
+@import "uikit/slider";
+@import "uikit/slideshow";
+@import "uikit/svg";
+
 // Elements
 @import "elements/bootstrap";
 @import "elements/typography";
 @import "elements/colors";
+@import "elements/buttons";
+@import "elements/borders";
+@import "elements/lang-selector";
+@import "elements/forms";
+@import "elements/dividers";
+@import "elements/animations";
+@import "elements/utility";
+@import "elements/links";
+@import "elements/filter";
+
+// Blocks
+@import "blocks/block-tabs";
+@import "blocks/block-team";
+@import "blocks/block-expertise-panel";
+
+// Templates
+@import "templates/home";

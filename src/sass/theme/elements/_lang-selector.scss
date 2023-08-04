@@ -1,0 +1,26 @@
+.lang-selector {
+    .lang-btn {
+        padding: 6px 10px 4px;
+        border-radius: 4px;
+        font-size: $h5-font-size;
+        color: $deepblue;
+        transition: background-color .2s;
+
+        &:not(.active, .lang-btn-disabled) {
+            &:hover {
+                background-color: $lightgrey;
+            }
+        }
+
+        &.active {
+            background: $primary;
+            color: $white;
+            cursor: default;
+        }
+
+        &.lang-btn-disabled {
+            color: shade-color($lightgrey, 20%);
+            cursor: not-allowed;
+        }
+    }
+}

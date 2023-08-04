@@ -1,0 +1,21 @@
+.filter-buttons {
+    input {
+        display: none;
+    
+        &:checked + label {
+            background: $white;
+            color: $black !important;
+        }
+    }
+
+    label {
+        &:focus-visible {
+            outline: solid;
+            outline-color: $red;
+        }
+    }
+}
+
+#buttonSearch {
+    cursor: pointer;
+}

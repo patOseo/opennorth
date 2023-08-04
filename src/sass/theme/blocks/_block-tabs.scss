@@ -1,0 +1,63 @@
+.block-tabs {
+    .block-tab {
+        cursor: pointer;
+        transition: .2s;
+        font-weight: 500;
+
+        .block-tab-content {
+            transition: .3s;
+        }
+
+        svg {
+            max-width: 128px;
+
+            path {
+                transition: color .3s;
+                stroke: $darkgrey !important;
+            }
+        }
+
+        .tab-title {
+            transition: color .3s;
+        }
+
+        &.active {
+            .block-tab-content {
+                background: $hyperblue;
+
+                &.active-secondary {
+                    background: $secondary;
+                }
+
+                &.active-bgimg {
+                    background: linear-gradient(180deg,rgba(237,65,35,.93) 0,rgba(221,37,5,.96) 100%),url("/wp-content/themes/opennorth/images/background-street.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+            
+
+            svg {
+                path {
+                    stroke: $white !important;
+                }
+            }
+
+            .tab-title {
+                color: $white;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            svg {
+                max-width: 64px;
+            }
+            .tab-title.tab-title-mobile-md {
+                font-size: 1rem;
+            }
+            .tab-title.tab-title-mobile-sm {
+                font-size: .85rem;
+            }
+        }
+    }
+}

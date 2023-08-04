@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) || exit;
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<?php
-	if ( ! is_page_template( 'page-templates/no-title.php' ) ) {
+	if ( ! is_page_template( 'page-templates/no-title.php' ) && !is_front_page() && get_field('remove_title') != 1) {
 		the_title(
 			'<header class="entry-header"><h1 class="entry-title">',
 			'</h1></header><!-- .entry-header -->'
@@ -26,15 +26,8 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php
 		the_content();
-		understrap_link_pages();
 		?>
 
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-
-		<?php understrap_edit_post_link(); ?>
-
-	</footer><!-- .entry-footer -->
 
 </article><!-- #post-<?php the_ID(); ?> -->

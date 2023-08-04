@@ -12,11 +12,9 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="wrapper" id="single-wrapper">
+<div class="wrapper uk-animation-slide-bottom-small" id="single-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?> px-lg-5" id="content" tabindex="-1">
-
-		<div class="row">
 
 			<main class="site-main" id="main">
 
@@ -27,13 +25,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 				}
 				?>
 
-				<?php get_template_part('global-templates/newsletter'); ?>
-
-				<?php get_template_part('global-templates/cta-footer'); ?>
-
 			</main>
 
-		</div><!-- .row -->
+			<?php get_template_part('global-templates/newsletter'); ?>
+
+			<?php get_template_part('global-templates/cta-footer'); ?>
 
 	</div><!-- #content -->
 

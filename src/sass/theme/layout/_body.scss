@@ -1,3 +1,18 @@
+html {
+    scroll-padding-top: 200px;
+}
+
 body {
+    height: auto;
     -webkit-font-smoothing: antialiased;
+    font-size: 1.25rem;
+
+    a {
+        text-underline-offset: 2px;
+        text-decoration-thickness: 1px !important;
+    }
+}
+
+::selection {
+    background: tint-color($red, 20%);
 }

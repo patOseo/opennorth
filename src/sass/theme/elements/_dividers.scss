@@ -1,0 +1,9 @@
+.divider {
+    border: 0;
+    height: 8px;
+    opacity: 1;
+
+    &.divider-gradient-blue {
+        background: linear-gradient(270deg, $lightgrey 0%, $hyperblue 100%);
+    }
+}

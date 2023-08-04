@@ -1,0 +1,22 @@
+.hide-break {
+    br {
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+}
+
+br.hide-break {
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+}
+
+.no-focus {
+    background-color: initial !important;
+    outline: 0 !important;
+}
+
+.otgs-development-site-front-end {
+    display: none;
+}

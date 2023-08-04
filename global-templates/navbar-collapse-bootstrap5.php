@@ -14,16 +14,21 @@ defined( 'ABSPATH' ) || exit;
 <div class="container px-lg-0">
 	<nav id="main-nav" class="d-flex justify-content-between navbar navbar-expand-xl navbar-light bg-white" aria-labelledby="main-nav-label">
 
-		<h2 id="main-nav-label" class="screen-reader-text">
+		<p id="main-nav-label" class="screen-reader-text">
 			<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
-		</h2>
+		</p>
 
 			<a class="navbar-brand m-0 p-0" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-en.svg" alt="Open North" width="304" height="50">
+				<?php if(lang_en()): ?>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-en.svg" alt="Open North" width="304" height="50">
+				<?php elseif(lang_fr()): ?>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-fr.svg" alt="Nord Ouvert" width="326" height="50">
+				<?php endif; ?>
 			</a>
 
 			<button
-				class="navbar-toggler"
+				class="navbar-toggler border-0"
+				id="navbarToggler"
 				type="button"
 				data-bs-toggle="collapse"
 				data-bs-target="#navbarNavDropdown"
@@ -31,10 +36,10 @@ defined( 'ABSPATH' ) || exit;
 				aria-expanded="false"
 				aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>"
 			>
-				<span class="navbar-toggler-icon"></span>
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-menu.svg" width="30" height="30">
 			</button>
 
-			<div class="main-menu-container d-flex align-items-center">
+			<div class="main-menu-container align-items-center d-xl-flex col-12 col-xl-auto">
 				<!-- The WordPress Menu goes here -->
 				<?php
 				wp_nav_menu(
@@ -51,14 +56,11 @@ defined( 'ABSPATH' ) || exit;
 				);
 				?>
 
-				<div class="d-inline-block search-btn mx-5">
+				<div class="d-none d-xl-inline-block search-btn mx-3">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-search.svg" alt="Search" width="32" height="32">
 				</div>
 
-				<div class="lang-selector d-inline-block ms-4">
-					<div class="d-inline-block lang-btn lang-btn-en active">EN</div>
-					<div class="d-inline-block lang-btn lang-btn-fr">FR</div>
-				</div>
+				<?php get_template_part('global-templates/lang-switcher'); ?>
 			</div>
 
 	</nav><!-- #main-nav -->

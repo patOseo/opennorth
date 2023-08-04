@@ -30,7 +30,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<?php endif; ?>
 		
 		<!-- ******************* The Navbar Area ******************* -->
-		<header id="wrapper-navbar" class="pt-4">
+		<header id="wrapper-navbar" class="pt-4 sticky-top">
 
 			<a class="skip-link <?php echo understrap_get_screen_reader_class( true ); ?>" href="#content">
 				<?php esc_html_e( 'Skip to content', 'understrap' ); ?>
@@ -41,7 +41,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 		</header><!-- #wrapper-navbar -->
 	
 	<?php if(is_single()): ?>
-			<div class="container px-lg-5 pt-5">
+			<div class="container px-lg-5 pt-5 uk-animation-slide-bottom-small">
 				<?php get_template_part('loop-templates/content', 'header'); ?>
 			</div>
 		</div>

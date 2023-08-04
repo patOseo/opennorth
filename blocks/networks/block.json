@@ -1,0 +1,13 @@
+{
+    "name": "acf/networks",
+    "title": "Networks",
+    "description": "A custom block to show the Open North resources.",
+    "category": "opennorth",
+    "icon": "networking",
+    "keywords": ["networks"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "networks.php"
+    },
+    "align": "full"
+}

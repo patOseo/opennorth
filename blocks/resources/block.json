@@ -1,0 +1,13 @@
+{
+    "name": "acf/resources",
+    "title": "Resources",
+    "description": "A custom block to show the Open North resources.",
+    "category": "opennorth",
+    "icon": "list-view",
+    "keywords": ["resources", "reports", "publications", "blog"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "resources.php"
+    },
+    "align": "full"
+}

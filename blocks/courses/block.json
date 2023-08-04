@@ -1,0 +1,13 @@
+{
+    "name": "acf/courses",
+    "title": "Courses",
+    "description": "A custom block to show online courses.",
+    "category": "opennorth",
+    "icon": "desktop",
+    "keywords": ["courses", "online"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "courses.php"
+    },
+    "align": "full"
+}

@@ -1,0 +1,12 @@
+.subscription, .gform_fields {
+    input, textarea {
+        font-family: $font-family-monospace !important;
+        border: $input-btn-border-width solid $input-btn-border-color !important;
+        border-radius: $border-radius-sm !important;
+
+        &:focus,
+        &:focus-visible {
+            outline-color: $purple !important;
+        }
+    }
+}

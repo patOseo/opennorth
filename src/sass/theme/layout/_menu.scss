@@ -1,31 +1,28 @@
 #main-nav {
-    padding: 30px 60px;
-    border-radius: 128px;
+    padding: 15px 30px;
+    border-radius: 36px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+
+    @include media-breakpoint-up(xl) {
+        padding: 30px 60px;
+        border-radius: 128px;
+    }
 
     .navbar-brand {
         img {
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(xxl) {
                 max-height: 30px;
+                width: auto;
             }
         }
     }
 
-    .nav-link {
-        color: $deepblue;
-        font-size: $h5-font-size;
-    }
-
-    .lang-selector {
-        .lang-btn {
-            padding: 6px 10px 4px;
-            border-radius: 4px;
-            font-size: $h5-font-size;
+    .menu-item {
+        .nav-link {
             color: $deepblue;
-            &.active {
-                background: $primary;
-                color: $white;
-            }
+            font-size: $h5-font-size;
+            transition: background-color .2s;
         }
     }
+    
 }

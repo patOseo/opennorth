@@ -1,0 +1,13 @@
+{
+    "name": "acf/expertise-tabs",
+    "title": "Expertise Tabs",
+    "description": "A custom block for the Open North expertise tabs.",
+    "category": "opennorth",
+    "icon": "columns",
+    "keywords": ["expertise", "tabs"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "expertise-tabs.php"
+    },
+    "align": "full"
+}
