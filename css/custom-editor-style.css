@@ -12239,7 +12239,7 @@ body a {
   color: #ffffff;
 }
 
-.wp-block-buttons .wp-block-button .wp-block-button__link, .wp-block-buttons .wp-block-button .wp-element-button {
+.wp-block-button__link, .wp-element-button {
   background-color: #F94A2D !important;
   color: #ffffff !important;
   border-radius: 0.5rem !important;
@@ -12247,7 +12247,7 @@ body a {
   font-family: "Inconsolata", sans-serif !important;
   transition: background-color 0.2s;
 }
-.wp-block-buttons .wp-block-button .wp-block-button__link:hover, .wp-block-buttons .wp-block-button .wp-element-button:hover {
+.wp-block-button__link:hover, .wp-element-button:hover {
   background-color: #e04329 !important;
 }
 
