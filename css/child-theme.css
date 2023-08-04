@@ -12296,6 +12296,9 @@ body a {
   }
 }
 
+article.type-post .entry-content h1, article.type-post .entry-content .h1, article.type-post .entry-content h2, article.type-post .entry-content .h2, article.type-post .entry-content h3, article.type-post .entry-content .h3, article.type-post .entry-content h4, article.type-post .entry-content .h4, article.type-post .entry-content h5, article.type-post .entry-content .h5, article.type-post .entry-content h6, article.type-post .entry-content .h6 {
+  font-weight: 500;
+}
 article.type-post .entry-content p {
   margin-bottom: 2rem;
 }
