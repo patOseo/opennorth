@@ -31,9 +31,15 @@ if ($query->have_posts()):
     ?>
 </div>
 
-
 <?php else: 
+
     // Display a message if no posts found
-    echo '<div class="row resource-row"><div class="col fs-3">No resources found. Try selecting different filtering options.</div></div>';
+    if(lang_en()) {
+        $msg = 'No resources found. Try selecting different filtering options.';
+    } elseif(lang_fr()) {
+        $msg = 'Aucune ressource trouvée. Essayez de sélectionner différentes options de filtrage.';
+    }
+    // Display a message if no posts found
+    echo '<div class="row resource-row"><div class="col fs-3">' . $msg . '</div></div>';
 
 endif;

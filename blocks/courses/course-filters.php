@@ -1,3 +1,11 @@
+<?php 
+if(lang_en()) {
+    $all = 'All';
+} elseif(lang_fr()) {
+    $all = 'Tous';
+}
+?>
+
 <div class="courses-filter filter-buttons ff-inconsolata py-4" id="filterCourses">
     <p class="text-uppercase fw-bold">
         <?php if(lang_en()) { echo 'Filter by area'; } elseif(lang_fr()) { echo 'Filtrer par matière'; } ?>
@@ -8,7 +16,7 @@
         ) );
         if($course_cats):
             echo '<div class="row row-cols-1 row-cols-lg-3 mb-6">';
-            echo '<div class="col"><input aria-hidden="true" type="checkbox" name="area" value="all" id="areaAll" class="filterAll" checked><label tabindex="0" for="areaAll" class="btn text-white bg-gradient-blue border-0 py-1 w-100 text-start">All</label></div>';
+            echo '<div class="col"><input aria-hidden="true" type="checkbox" name="area" value="all" id="areaAll" class="filterAll" checked><label tabindex="0" for="areaAll" class="btn text-white bg-gradient-blue border-0 py-1 w-100 text-start">' . $all . '</label></div>';
             foreach($course_cats as $course_cat):
                 echo '<div class="col"><input aria-hidden="true" id="area-' . esc_attr($course_cat->slug) . '" type="checkbox" name="area" value="' . esc_attr($course_cat->slug) . '" class="subcheck"><label tabindex="0" for="area-' . esc_attr($course_cat->slug) . '" class="btn text-white bg-gradient-blue border-0 py-1 w-100 text-start">' . $course_cat->name . '</label></div>';
             endforeach;

@@ -38,7 +38,9 @@ defined( 'ABSPATH' ) || exit;
 				</div>
 
 				<div class="col-6 col-lg-3">
-					<h3 class="h4 mb-4">Quick links</h3>
+					<h3 class="h4 mb-4">
+						<?php if(lang_en()) { echo 'Quick Links'; } elseif(lang_fr()) { echo 'Liens rapides'; } ?>
+					</h3>
 					<?php
 					wp_nav_menu(
 						array(
@@ -60,7 +62,9 @@ defined( 'ABSPATH' ) || exit;
 					</ul> -->
 				</div>
 				<div class="col-6 col-lg-3">
-					<h3 class="h4 mb-4">Contact us</h3>
+					<h3 class="h4 mb-4">
+						<?php if(lang_en()) { echo 'Contact us'; } elseif(lang_fr()) { echo 'Contactez-nous'; } ?>
+					</h3>
 					<p class="fs-6">4388 Rue Saint-Denis<br>
 					Suite 200, #216<br>
 					Montréal, QC, Canada H2J 2L1<br>

@@ -1,3 +1,11 @@
+<?php 
+if(lang_en()) {
+    $all = 'All';
+} elseif(lang_fr()) {
+    $all = 'Tous';
+}
+?>
+
 <div class="filter-buttons ff-inconsolata py-4" id="filterResources">
     <div class="row">
         <div class="col-lg-8">
@@ -12,7 +20,7 @@
                 
                 if($resource_cats):
                     echo '<div class="row row-cols-2 mb-6">';
-                    echo '<div class="col"><input type="checkbox" name="subject" value="all" id="subjectAll" class="filterAll" checked><label for="subjectAll" class="btn text-white bg-gradient-blue border-0 py-1 w-100 text-start">All</label></div>';
+                    echo '<div class="col"><input type="checkbox" name="subject" value="all" id="subjectAll" class="filterAll" checked><label for="subjectAll" class="btn text-white bg-gradient-blue border-0 py-1 w-100 text-start">' . $all . '</label></div>';
                     foreach($resource_cats as $resource_cat): if($resource_cat->name == 'Uncategorized' || $resource_cat->name == 'Non classifié(e)') { continue; }
                     echo '<div class="col"><input id="subject-' . esc_attr($resource_cat->slug) . '" type="checkbox" name="subject" value="' . esc_attr($resource_cat->slug) . '" class="subcheck"><label for="subject-' . esc_attr($resource_cat->slug) . '" class="btn text-white bg-gradient-blue border-0 py-1 w-100 text-start">' . $resource_cat->name . '</label></div>';
                     endforeach;
@@ -32,7 +40,7 @@
                 
                 if($resource_types):
                     echo '<div class="row row-cols-1 mb-6">';
-                    echo '<div class="col"><input type="checkbox" name="rtype" value="all" id="rtypeAll" class="filterAll" checked><label for="rtypeAll" class="btn text-white bg-gradient-blue border-0 py-1 w-100 text-start">All</label></div>';
+                    echo '<div class="col"><input type="checkbox" name="rtype" value="all" id="rtypeAll" class="filterAll" checked><label for="rtypeAll" class="btn text-white bg-gradient-blue border-0 py-1 w-100 text-start">' . $all . '</label></div>';
                     foreach($resource_types as $resource_type):
                         echo '<div class="col"><input id="type-' . esc_attr($resource_type->slug) . '" type="checkbox" name="rtype" value="' . esc_attr($resource_type->slug) . '" class="subcheck"><label for="type-' . esc_attr($resource_type->slug) . '" class="btn text-white bg-gradient-blue border-0 py-1 w-100 text-start">' . $resource_type->name . '</label></div>';
                     endforeach;
