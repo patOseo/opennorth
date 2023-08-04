@@ -4,7 +4,7 @@
 
 .wp-block-buttons {
     .wp-block-button {
-        .wp-block-button__link.wp-element-button {
+        .wp-block-button__link,.wp-element-button {
             background-color: $secondary !important;
             color: $white !important;
             border-radius: .5rem !important;
