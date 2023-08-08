@@ -23,7 +23,7 @@
                         $pre_authors = 'par ';
                     }
                 ?>
-                <?php echo $pre_authors . implode(', ', $authors); ?>
+                <?php echo $pre_authors . implode(' & ', array_filter(array_merge(array(implode(', ', array_slice($authors, 0, -1))), array_slice($authors, -1)), 'strlen')); ?>
             </div>
         <?php endif; ?>
 
