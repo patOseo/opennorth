@@ -18,7 +18,7 @@
                                 <div class="network-subheading fs-6 lh-sm mb-4"><?php the_sub_field('network_subheading'); ?></div>
                                 <div class="network-buttons mt-auto">
                                     <?php if(get_sub_field('case_study_link')): ?>
-                                        <a href="<?php the_sub_field('case_study_link'); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-primary mb-3"><?php if(lang_en()) { echo 'Case Study'; } elseif(lang_fr()) { echo 'Étude de cas'; } ?> 
+                                        <a href="<?php the_sub_field('case_study_link'); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-primary mb-3"><?php if(lang_en()) { echo 'Learn more'; } elseif(lang_fr()) { echo 'En savoir plus'; } ?> 
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M20.5014 3.60093L13.3525 10.7498" stroke="white" stroke-width="2" stroke-linecap="round"/>
                                                 <path d="M14.5 3.60083L20.5 3.60083" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -27,9 +27,6 @@
                                             </svg>
                                         </a>
                                     <?php endif; ?>
-                                    <p class="mb-0 ff-inconsolata">
-                                        <?php if(lang_en()) { echo 'Learn More'; } elseif(lang_fr()) { echo 'En savoir plus'; } ?>
-                                    </p>
                                 </div>
                             </div>
                         </li>
