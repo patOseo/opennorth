@@ -25,6 +25,7 @@ if ($query->have_posts()):
     <?php 
     understrap_pagination( [
             'total' => $query->max_num_pages,
+            'base' => '/resources/%_%#filteredResources',
             'prev_text' => '&#60;',
             'next_text' => '&#62;',
         ], 'pagination ff-inconsolata fw-bold' ); 

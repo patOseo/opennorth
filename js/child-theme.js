@@ -16556,7 +16556,6 @@
 	  });
 
 	  // Filter Resources
-
 	  function filterResources() {
 	    var selectedResourceType = $('input[name="rtype"]:checked').map(function () {
 	      return $(this).val();
@@ -16564,6 +16563,7 @@
 	    var selectedResourceSubject = $('input[name="subject"]:checked').map(function () {
 	      return $(this).val();
 	    }).get();
+	    var sortOrder = $('#sortResources').val();
 	    var searchResourceTerm = $('#resourceSearch').val();
 	    $.ajax({
 	      url: '/wp-admin/admin-ajax.php',
@@ -16573,17 +16573,34 @@
 	        action: 'filter_resources',
 	        rtype: selectedResourceType,
 	        subject: selectedResourceSubject,
-	        search: searchResourceTerm
+	        search: searchResourceTerm,
+	        sort: sortOrder
 	      },
-	      beforeSend: function () {},
 	      success: function (response) {
 	        $('#filteredResources').html(response);
-	      },
-	      error: function (xhr, status, error) {},
-	      complete: function () {
-	        // Hide the loading indicator if used
 	      }
 	    });
+	  }
+	  function changeSortValue() {
+	    // If value of sortResources is "ASC", change to "DESC", and vice versa
+	    if ($('#sortResources').val() === 'DESC') {
+	      $('#sortResources').val('ASC');
+	      // if html language is french
+	      if ($('html').attr('lang') == 'en-CA') {
+	        $('#sortResources span').html('Oldest first');
+	      } else if ($('html').attr('lang') == 'fr-CA') {
+	        $('#sortResources span').html('Les plus anciens en premier');
+	      }
+	    } else {
+	      $('#sortResources').val('DESC');
+	      if ($('html').attr('lang') == 'en-CA') {
+	        $('#sortResources span').html('Newest first');
+	      } else if ($('html').attr('lang') == 'fr-CA') {
+	        $('#sortResources span').html('Les plus récents en premier');
+	      }
+	    }
+	    $('#sortResources img').toggleClass('rotate-180');
+	    filterResources();
 	  }
 	  function filterCourses() {
 	    var selectedCourseType = $('input[name="area"]:checked').map(function () {
@@ -16599,12 +16616,9 @@
 	        area: selectedCourseType,
 	        search: searchCourseTerm
 	      },
-	      beforeSend: function () {},
 	      success: function (response) {
 	        $('#filteredCourses').html(response);
-	      },
-	      error: function (xhr, status, error) {},
-	      complete: function () {}
+	      }
 	    });
 	  }
 
@@ -16616,6 +16630,7 @@
 	    }
 	  });
 	  $('#filterResources #buttonSearch').on('click', filterResources);
+	  $('#filterResources #sortResources').on('click', changeSortValue);
 
 	  // Filter Courses
 	  $('#filterCourses input[type="checkbox"').on('change', filterCourses);

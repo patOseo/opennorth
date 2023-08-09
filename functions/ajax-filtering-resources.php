@@ -15,6 +15,12 @@ function opennorth_ajax_filter_resources() {
         $sanitizeSearch = sanitize_text_field($searchTerm);
     }
 
+    // Grab the sort value from $_POST
+    if(isset($_POST['sort'])) {
+        $sort = $_POST['sort'];
+        $sortOrder = sanitize_text_field($sort);
+    }
+
     // Load values into the query args
     $args = array(
         'post_type'      => 'post',
@@ -46,6 +52,11 @@ function opennorth_ajax_filter_resources() {
 
     if(isset($sanitizeSearch)) {
         $args['s'] = $sanitizeSearch;
+    }
+
+    if(isset($sortOrder)) {
+        $args['order'] = $sortOrder;
+        $args['orderby'] = 'date';
     }
 
     $query = new WP_Query($args);

@@ -12203,6 +12203,10 @@ body a {
   display: none;
 }
 
+.transition-1s {
+  transition: all 0.65s ease-in-out;
+}
+
 .arrow-link a {
   color: #2E16BF;
   text-decoration: none !important;
@@ -12233,6 +12237,10 @@ body a {
 .pagination .page-item.active .page-link {
   background-color: #ffffff;
   color: #000000;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
 }
 
 .block-tabs .block-tab {

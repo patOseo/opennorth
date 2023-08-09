@@ -49,9 +49,9 @@ if(lang_en()) {
             ?>
         </div>
     </div>
-    <div class="resources-search mb-6">
+    <div class="resources-search mb-5">
         <div class="row justify-content-end align-items-center">
-            <div class="col-lg-4 text-end">
+            <div class="col-lg-4 px-0 text-end">
                 <div>
                     <label for="resourceSearch" class="d-inline mt-3 mb-0 me-2 fw-bold">
                     <?php if(lang_en()) { echo 'Search'; } elseif(lang_fr()) { echo 'Rechercher'; } ?>
@@ -59,6 +59,15 @@ if(lang_en()) {
                     <input id="resourceSearch" type="text" class="p-1 no-focus text-white d-inline bg-deepblue rounded-0 border-2 border-top-0 border-start-0 border-end-0 border-bottom" aria-label="Search resources" aria-describedby="buttonSearch">
                     <img id="buttonSearch" class="mx-2" src="<?php echo get_stylesheet_directory_uri() . '/images/icon-search-w.svg'; ?>" width="32" height="32">
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="resources-sort">
+        <div class="row">
+            <div class="col-lg-4 px-0">
+                <button id="sortResources" value="DESC" class="px-0 btn btn-lg btn-primary bg-transparent d-inline mt-3 mb-0 me-2 fw-bold border-0">
+                    <span><?php if(lang_en()) { echo 'Newest first'; } elseif(lang_fr()) { echo 'Les plus récents en premier'; } ?></span>  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-arrow.svg" alt="Arrow" class="transition-1s">
+                </button>
             </div>
         </div>
     </div>

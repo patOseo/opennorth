@@ -58,7 +58,6 @@ jQuery(function($){
     });
 
     // Filter Resources
-
     function filterResources() {
         var selectedResourceType = $('input[name="rtype"]:checked').map(function(){
             return $(this).val();
@@ -66,7 +65,7 @@ jQuery(function($){
         var selectedResourceSubject = $('input[name="subject"]:checked').map(function(){
             return $(this).val();
         }).get();
-
+        var sortOrder = $('#sortResources').val();
         var searchResourceTerm = $('#resourceSearch').val();
 
         $.ajax({
@@ -76,27 +75,44 @@ jQuery(function($){
                 action: 'filter_resources',
                 rtype: selectedResourceType,
                 subject: selectedResourceSubject,
-                search: searchResourceTerm
-            },
-            beforeSend: function() {
+                search: searchResourceTerm,
+                sort: sortOrder
             },
             success: function(response) {
                 $('#filteredResources').html(response);
-            },
-            error: function(xhr, status, error) {
-            },
-            complete: function() {
-                // Hide the loading indicator if used
-            },
+            }
         });
+    }
+
+    function changeSortValue() {
+        // If value of sortResources is "ASC", change to "DESC", and vice versa
+        if($('#sortResources').val() === 'DESC') {
+            $('#sortResources').val('ASC');
+            // if html language is french
+            if($('html').attr('lang') == 'en-CA') {
+                $('#sortResources span').html('Oldest first');
+            } else if($('html').attr('lang') == 'fr-CA'){
+                $('#sortResources span').html('Les plus anciens en premier');
+            }
+        }
+        else {
+            $('#sortResources').val('DESC');
+            if($('html').attr('lang') == 'en-CA') {
+                $('#sortResources span').html('Newest first');
+            } else if($('html').attr('lang') == 'fr-CA'){
+                $('#sortResources span').html('Les plus récents en premier');
+            }
+        }
+        $('#sortResources img').toggleClass('rotate-180');
+        filterResources();
     }
 
     function filterCourses() {
         var selectedCourseType = $('input[name="area"]:checked').map(function(){
             return $(this).val();
         }).get();
-
         var searchCourseTerm = $('#courseSearch').val();
+
 
         $.ajax({
             url: '/wp-admin/admin-ajax.php', // WordPress provides the 'ajaxurl' global variable
@@ -106,15 +122,9 @@ jQuery(function($){
                 area: selectedCourseType,
                 search: searchCourseTerm,
             },
-            beforeSend: function() {
-            },
             success: function(response) {
                 $('#filteredCourses').html(response);
-            },
-            error: function(xhr, status, error) {
-            },
-            complete: function() {
-            },
+            }
         });
     }
 
@@ -122,6 +132,7 @@ jQuery(function($){
     $('#filterResources input[type="checkbox"').on('change', filterResources);
     $('#filterResources #resourceSearch').on('keydown', function(event){if(event.keyCode == 13){filterResources()}});
     $('#filterResources #buttonSearch').on('click', filterResources);
+    $('#filterResources #sortResources').on('click', changeSortValue);
 
     // Filter Courses
     $('#filterCourses input[type="checkbox"').on('change', filterCourses);
