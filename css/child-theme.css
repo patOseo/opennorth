@@ -12243,6 +12243,39 @@ body a {
   transform: rotate(180deg);
 }
 
+.login-form label {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: normal;
+}
+.login-form input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 1rem;
+}
+.login-form input[type=submit] {
+  width: 100%;
+  padding: 0.75rem 2rem;
+  background: #2E16BF;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-family: "Inconsolata", sans-serif;
+  transition: 0.2s;
+}
+.login-form input[type=submit]:hover {
+  background: #3e22e6;
+}
+.login-form .login-remember label, .login-form .login-remember input {
+  display: inline;
+}
+.login-form .login-remember input {
+  width: auto;
+}
+
 .block-tabs .block-tab {
   cursor: pointer;
   transition: 0.2s;

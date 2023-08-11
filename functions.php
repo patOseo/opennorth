@@ -95,6 +95,8 @@ add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_co
 
 
 // Custom Theme Functions
+@require_once('functions/roles.php');
+@require_once('functions/login.php');
 @require_once('functions/dashboard.php');
 @require_once('functions/image-sizes.php');
 @require_once('functions/acf-options.php');

@@ -15,18 +15,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
+<?php if(role_any()): ?>
     <div class="wrapper" id="page-wrapper">
 
     	<div class="container-fluid" id="content" tabindex="-1">
 
     		<main class="site-main" id="main">
 
-    			<?php
-    			while ( have_posts() ) {
-    				the_post();
-    				get_template_part( 'loop-templates/content', 'page' );
-    			}
-    			?>
+    			<?php get_template_part('dashboard-templates/dashboard', 'main'); ?>
 
     		</main>
 
@@ -35,6 +31,8 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div><!-- #page-wrapper -->
 
     </div><!-- div.col-10 -->
+
+<?php else: get_template_part('global-templates/must-be-logged-in'); endif; ?>
 
 <?php
 get_footer('dashboard');
