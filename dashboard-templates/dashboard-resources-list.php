@@ -11,8 +11,6 @@ $args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
     'posts_per_page' => 25,
-    'lang' => 'fr',
-
 );
 
 $resources = new WP_Query($args);
@@ -36,11 +34,11 @@ $resources = new WP_Query($args);
             $cats = get_the_terms(get_the_ID(), 'category');
         ?>
             <tr>
-                <td><?php the_title(); ?></td>
-                <td><button class="btn btn-sm btn-primary pe-none"><?php echo implode(', ', wp_list_pluck($rtype, 'name')); ?></button></td>
-                <td class="ff-inconsolata"><?php echo implode(',<br>', wp_list_pluck($cats, 'name')); ?></td>
-                <td class="ff-inconsolata"><?php echo get_the_date('M j Y'); ?></td>
-                <td><a class="btn btn-sm btn-secondary text-white" href=""><span class="dashicons dashicons-edit"></span></a> <a class="btn btn-sm btn-secondary text-white" href=""><span class="dashicons dashicons-wordpress"></span></a></td>
+                <td class="align-middle"><?php the_title(); ?></td>
+                <td class="align-middle"><button class="btn btn-sm btn-primary pe-none align-middle"><?php echo implode(', ', wp_list_pluck($rtype, 'name')); ?></button></td>
+                <td class="ff-inconsolata align-middle"><?php echo implode(',<br>', wp_list_pluck($cats, 'name')); ?></td>
+                <td class="ff-inconsolata align-middle"><?php echo get_the_date('M j Y'); ?></td>
+                <td class="align-middle"><a class="btn btn-sm btn-secondary text-white" href=""><span class="dashicons dashicons-edit"></span></a> <a class="btn btn-sm btn-secondary text-white" href="<?php echo get_edit_post_link(); ?>" target="_blank"><span class="dashicons dashicons-wordpress"></span></a></td>
             </tr>
         <?php endwhile; ?>
     </table>
