@@ -24,3 +24,10 @@ br.hide-break {
 .transition-1s {
     transition: all .65s ease-in-out;
 }
+
+// Loop through z-index-{1-5} and create classes for each
+@for $i from 1 through 5 {
+    .z-index-#{$i} {
+        z-index: $i;
+    }
+}

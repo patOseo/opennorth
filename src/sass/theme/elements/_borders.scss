@@ -10,6 +10,30 @@
         left: 10px;
         z-index: -1;
     }
+
+    &.border-offset-secondary {
+        &:after {
+            border: 2px solid $secondary;
+        }
+    }
+
+    &.border-offset-index-0 {
+        &:after {
+            z-index: 0;
+        }
+    }
+}
+
+.border-left-gradient {
+    &:before {
+        content: "";
+        position: absolute;
+        background: linear-gradient(0.13deg,#F2F2F2 0.12%,#2E16BF 43.24%,#F94A2D 99.88%);
+        width: 8px;
+        height: 100%;
+        left: -8px;
+        border-radius: 8px;
+    }
 }
 
 .resource-row {

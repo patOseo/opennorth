@@ -1,0 +1,110 @@
+{
+    "key": "group_64ac5d6c524f2",
+    "title": "Page Settings",
+    "fields": [
+        {
+            "key": "field_64ac5d6c78b4d",
+            "label": "Blue Background",
+            "name": "blue_background",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Enables a blue background for the entire page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1,
+            "wpml_cf_preferences": "0"
+        },
+        {
+            "key": "field_64ac601384a1a",
+            "label": "Remove Page Title",
+            "name": "remove_title",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Removes the WordPress page title from the page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1,
+            "wpml_cf_preferences": "0"
+        },
+        {
+            "key": "field_64ac6a69b85ef",
+            "label": "Include Newsletter Block",
+            "name": "include_newsletter",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Adds a newsletter block at the bottom of the page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1,
+            "wpml_cf_preferences": "0"
+        },
+        {
+            "key": "field_64ac6c4322cf5",
+            "label": "Include Call-to-action",
+            "name": "include_cta",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Adds the call-to-action at the bottom of the page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1,
+            "wpml_cf_preferences": "0"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfml_field_group_mode": "advanced",
+    "modified": 1692149596
+}

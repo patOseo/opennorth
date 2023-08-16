@@ -5,7 +5,7 @@
             <?php if(lang_en()) { echo 'Our Networks'; } elseif(lang_fr()) { echo 'Nos réseaux'; } ?>
         </p>
         <div class="networks-slider uk-slider position-relative" uk-slider>
-            <div class="uk-slider-container col-xl-10 mx-auto rounded-3">
+            <div class="uk-slider-container col-xl-10 mx-auto px-6 px-lg-0 rounded-3">
                 <ul class="uk-slider-items pb-4" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 200; hidden: true">
                     <?php while(have_rows('networks', 'option')): the_row(); ?>
                         <?php 

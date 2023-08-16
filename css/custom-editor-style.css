@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/*
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+*/
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -12199,6 +12207,12 @@ body a {
   text-decoration-thickness: 1px !important;
 }
 
+.entry-content > .wp-block-group > .wp-block-group,
+.entry-content > .wp-block-group > .wp-block-columns {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .ff-inconsolata {
   font-family: "Inconsolata", monospace;
 }
@@ -12261,6 +12275,22 @@ body a {
   top: 10px;
   left: 10px;
   z-index: -1;
+}
+.border-offset.border-offset-secondary:after {
+  border: 2px solid #F94A2D;
+}
+.border-offset.border-offset-index-0:after {
+  z-index: 0;
+}
+
+.border-left-gradient:before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(0.13deg, #F2F2F2 0.12%, #2E16BF 43.24%, #F94A2D 99.88%);
+  width: 8px;
+  height: 100%;
+  left: -8px;
+  border-radius: 8px;
 }
 
 .resource-row {
@@ -12344,6 +12374,26 @@ body a {
 
 .transition-1s {
   transition: all 0.65s ease-in-out;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+.z-index-3 {
+  z-index: 3;
+}
+
+.z-index-4 {
+  z-index: 4;
+}
+
+.z-index-5 {
+  z-index: 5;
 }
 
 .arrow-link a {

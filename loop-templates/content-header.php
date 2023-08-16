@@ -2,9 +2,11 @@
 
     <div class="col-lg-9">
 
+        <?php if(!is_singular('jobs')): ?>
         <div class="article-date mb-3 ff-inconsolata text-secondary text-uppercase fw-bolder">
             <?php echo get_the_date('d M Y'); ?>
         </div>
+        <?php endif; ?>
 
 	    <?php the_title( '<h1 class="entry-title mb-4 fw-light display-5">', '</h1>' ); ?>
         <?php if(get_field('subtitle')): ?>

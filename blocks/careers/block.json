@@ -1,0 +1,13 @@
+{
+    "name": "acf/careers",
+    "title": "Careers Feed",
+    "description": "A custom block to show a feed of current Jobs.",
+    "category": "opennorth",
+    "icon": "megaphone",
+    "keywords": ["careers", "jobs"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "careers.php"
+    },
+    "align": "full"
+}

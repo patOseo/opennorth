@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper uk-animation-slide-bottom-small" id="page-wrapper">
 
-	<div class="container-fluid" id="content" tabindex="-1">
+	<div class="container-fluid px-0" id="content" tabindex="-1">
 
 		<main class="site-main" id="main">
 

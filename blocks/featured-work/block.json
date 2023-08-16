@@ -1,0 +1,13 @@
+{
+    "name": "acf/featured-work",
+    "title": "Featured Work",
+    "description": "A custom block to display a featured resource.",
+    "category": "opennorth",
+    "icon": "pressthis",
+    "keywords": ["resources", "work", "featured"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "featured-work.php"
+    },
+    "align": "full"
+}

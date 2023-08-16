@@ -1,0 +1,61 @@
+{
+    "key": "group_64c41815f2899",
+    "title": "Help",
+    "fields": [
+        {
+            "key": "field_64c41816e93a0",
+            "label": "Icons",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_64c4182de93a1",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Below is a list of SVG icons that can be used with the \"SVG Icon\" block. Copy the icon name below and paste it into the \"icon name\" field of the SVG Icon block.<br><br>\r\n\r\n<table class=\"wp-list-table widefat fixed striped table-view-list pages\">\r\n    <thead>\r\n        <tr>\r\n            <th>Icon Preview<\/th>\r\n            <th>Icon Name<\/th>\r\n        <\/tr>\r\n    <\/thead>\r\n    <tbody>\r\n        <tr>\r\n            <td><img src=\"\/wp-content\/themes\/opennorth\/images\/icon-value-1.svg\" width=\"60\" height=\"60\"><\/td>\r\n            <td>icon-value-1<\/td> \r\n        <\/tr>\r\n        <tr>\r\n            <td><img src=\"\/wp-content\/themes\/opennorth\/images\/icon-value-2.svg\" width=\"60\" height=\"60\"><\/td>\r\n            <td>icon-value-2<\/td>\r\n        <\/tr>\r\n        <tr>\r\n            <td><img src=\"\/wp-content\/themes\/opennorth\/images\/icon-value-3.svg\" width=\"60\" height=\"60\"><\/td>\r\n            <td>icon-value-3<\/td>\r\n        <\/tr>\r\n        <tr>\r\n            <td><img src=\"\/wp-content\/themes\/opennorth\/images\/icon-value-4.svg\" width=\"60\" height=\"60\"><\/td>\r\n            <td>icon-value-4<\/td>\r\n        <\/tr>\r\n        <tr>\r\n            <td><img src=\"\/wp-content\/themes\/opennorth\/images\/icon-value-5.svg\" width=\"60\" height=\"60\"><\/td>\r\n            <td>icon-value-5<\/td>\r\n        <\/tr>\r\n        <tr>\r\n            <td><img src=\"\/wp-content\/themes\/opennorth\/images\/icon-value-6.svg\" width=\"60\" height=\"60\"><\/td>\r\n            <td>icon-value-6<\/td>\r\n        <\/tr>\r\n        <tr>\r\n            <td><img src=\"\/wp-content\/themes\/opennorth\/images\/icon-value-7.svg\" width=\"60\" height=\"60\"><\/td>\r\n            <td>icon-value-7<\/td>\r\n        <\/tr>\r\n        <tr>\r\n            <td><img src=\"\/wp-content\/themes\/opennorth\/images\/icon-value-8.svg\" width=\"60\" height=\"60\"><\/td>\r\n            <td>icon-value-8<\/td>\r\n        <\/tr>\r\n        <tr>\r\n            <td><img src=\"\/wp-content\/themes\/opennorth\/images\/icon-circle-quarter.svg\" width=\"60\" height=\"60\"><\/td>\r\n            <td>icon-circle-quarter<\/td>\r\n        <\/tr>\r\n        <tr>\r\n            <td><img src=\"\/wp-content\/themes\/opennorth\/images\/icon-circle-half.svg\" width=\"60\" height=\"60\"><\/td>\r\n            <td>icon-circle-half<\/td>\r\n        <\/tr>\r\n        <tr>\r\n            <td><img src=\"\/wp-content\/themes\/opennorth\/images\/icon-circle-full.svg\" width=\"60\" height=\"60\"><\/td>\r\n            <td>icon-circle-full<\/td>\r\n        <\/tr>\r\n    <\/tbody>\r\n<\/table>",
+            "new_lines": "",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-help"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfml_field_group_mode": "advanced",
+    "modified": 1692149484
+}

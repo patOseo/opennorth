@@ -1,0 +1,65 @@
+{
+    "key": "group_64d6725ae8855",
+    "title": "Block – Featured Work",
+    "fields": [
+        {
+            "key": "field_64d6725b0b4fe",
+            "label": "Featured Resource",
+            "name": "featured_resource",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "Select a featured resource from the left column. The resource in the right column will be displayed.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "post_type": [
+                "post"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": [
+                "resource_type:blog_news",
+                "resource_type:case-studies",
+                "resource_type:projects",
+                "resource_type:reports-research",
+                "resource_type:tools-guides"
+            ],
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "return_format": "id",
+            "min": 1,
+            "max": 1,
+            "elements": "",
+            "bidirectional": 0,
+            "bidirectional_target": []
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/featured-work"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfml_field_group_mode": "translation",
+    "modified": 1692149412
+}
