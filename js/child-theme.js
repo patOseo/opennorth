@@ -16515,7 +16515,7 @@
 	  });
 
 	  // Home Values – Insert svg inside .home-values
-	  $('.home-values').prepend('<img class="position-absolute top-50 start-50 translate-middle w-100 mx-auto uk-animation-stroke" src="/wp-content/themes/opennorth/images/home-values.svg" uk-svg="stroke-animation: true">');
+	  $('.home-values').prepend('<img class="position-absolute d-none d-md-block top-50 start-50 translate-middle w-100 mw-100 mx-auto uk-animation-stroke" src="/wp-content/themes/opennorth/images/home-values.svg" uk-svg="stroke-animation: true"><img class="position-absolute d-block d-md-none top-50 start-50 translate-middle w-100 mw-100 mx-auto uk-animation-stroke" src="/wp-content/themes/opennorth/images/home-values-vertical.svg" uk-svg="stroke-animation: true">');
 
 	  // Links – insert svg inside .arrow-link
 	  $('.arrow-link a').append('<img class="ms-2" src="/wp-content/themes/opennorth/images/icon-arrow-link.svg">');

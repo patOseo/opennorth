@@ -1,5 +1,11 @@
 .btn-secondary {
     color: $white;
+
+    &:hover {
+        color: $white !important;
+        background-color: shade-color($secondary, 10%);
+        border-color: shade-color($secondary, 10%);
+    }
 }
 
 .wp-block-button__link,.wp-element-button {

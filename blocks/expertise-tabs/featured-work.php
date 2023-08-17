@@ -1,10 +1,4 @@
-<?php 
-
-$resource = get_field('featured_resource');
-$r_id = $resource[0];
-
-if($resource): ?>
-<div class="featured-work-container" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 200;">
+<div class="featured-work-container mb-6 mb-lg-0" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 200;">
     <div class="d-flex justify-content-between lh-1 mb-4">
         <div class="ff-inconsolata fw-bold text-uppercase text-white">
             <?php if(lang_en()) { echo 'Featured work'; } elseif(lang_fr()) { echo 'Notre travail en vedette'; } ?>
@@ -15,7 +9,7 @@ if($resource): ?>
             </a>
         </div>
     </div>
-    <div class="position-relative mb-6 mb-lg-0">
+    <div class="position-relative">
         <div class="border-offset border-offset-secondary border-offset-index-0 w-100 h-100">
             <div class="featured-work position-relative d-flex flex-column rounded-3 p-5 bg-white z-index-1 h-100">
                 <div class="featured-work-content position-relative ps-3 border-left-gradient">
@@ -42,4 +36,3 @@ if($resource): ?>
         </div>
     </div>
 </div>
-<?php endif; ?>

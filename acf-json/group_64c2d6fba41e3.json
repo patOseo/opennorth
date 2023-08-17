@@ -188,6 +188,87 @@
                             "parent_repeater": "field_64c2d91cf0684"
                         }
                     ]
+                },
+                {
+                    "key": "field_64dcd5a1245a3",
+                    "label": "Learn More Section",
+                    "name": "learn_more",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64dcd5ac245a4",
+                            "label": "Heading",
+                            "name": "heading",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_64dcd622245a5",
+                            "label": "Featured Works",
+                            "name": "featured_works",
+                            "aria-label": "",
+                            "type": "relationship",
+                            "instructions": "The top resource will be displayed as a full-width feature and display the featured image, if it has one. The rest of the resources will be displayed in a grid below. You can click & drag to re-order.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "post_type": [
+                                "post"
+                            ],
+                            "post_status": [
+                                "publish"
+                            ],
+                            "taxonomy": [
+                                "resource_type:blog_news",
+                                "resource_type:case-studies",
+                                "resource_type:projects",
+                                "resource_type:reports-research",
+                                "resource_type:tools-guides"
+                            ],
+                            "filters": [
+                                "search",
+                                "taxonomy"
+                            ],
+                            "return_format": "id",
+                            "min": 3,
+                            "max": "",
+                            "elements": [
+                                "featured_image"
+                            ],
+                            "bidirectional": 0,
+                            "bidirectional_target": []
+                        }
+                    ]
                 }
             ]
         },
@@ -357,6 +438,87 @@
                             "parent_repeater": "field_64c2d988f068b"
                         }
                     ]
+                },
+                {
+                    "key": "field_64dcd879245a7",
+                    "label": "Learn More Section",
+                    "name": "learn_more",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64dcd88a245a8",
+                            "label": "Heading",
+                            "name": "heading",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_64dcd846245a6",
+                            "label": "Featured Works",
+                            "name": "featured_works",
+                            "aria-label": "",
+                            "type": "relationship",
+                            "instructions": "The top resource will be displayed as a full-width feature and display the featured image, if it has one. The rest of the resources will be displayed in a grid below. You can click & drag to re-order.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "post_type": [
+                                "post"
+                            ],
+                            "post_status": [
+                                "publish"
+                            ],
+                            "taxonomy": [
+                                "resource_type:blog_news",
+                                "resource_type:case-studies",
+                                "resource_type:projects",
+                                "resource_type:reports-research",
+                                "resource_type:tools-guides"
+                            ],
+                            "filters": [
+                                "search",
+                                "taxonomy"
+                            ],
+                            "return_format": "id",
+                            "min": 3,
+                            "max": "",
+                            "elements": [
+                                "featured_image"
+                            ],
+                            "bidirectional": 0,
+                            "bidirectional_target": []
+                        }
+                    ]
                 }
             ]
         }
@@ -380,5 +542,5 @@
     "description": "",
     "show_in_rest": 0,
     "acfml_field_group_mode": "advanced",
-    "modified": 1692148851
+    "modified": 1692195265
 }

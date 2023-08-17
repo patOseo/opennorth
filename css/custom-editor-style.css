@@ -11615,7 +11615,11 @@ html {
 body {
   height: auto;
   -webkit-font-smoothing: antialiased;
-  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 1.25rem;
+  }
 }
 body a {
   text-underline-offset: 2px;
@@ -12252,6 +12256,11 @@ body a {
 .btn-secondary {
   color: #ffffff;
 }
+.btn-secondary:hover {
+  color: #ffffff !important;
+  background-color: #e04329;
+  border-color: #e04329;
+}
 
 .wp-block-button__link, .wp-element-button {
   background-color: #F94A2D !important;
@@ -12532,13 +12541,11 @@ body a {
   background-size: cover;
 }
 
+.home-values img[hidden] {
+  display: none !important;
+}
 .home-values svg {
   z-index: -1;
-}
-@media (max-width: 767.98px) {
-  .home-values svg {
-    transform: translate(-50%, -50%) rotateZ(90deg) !important;
-  }
 }
 
 article.type-post .entry-content h1, article.type-post .entry-content .h1, article.type-post .entry-content h2, article.type-post .entry-content .h2, article.type-post .entry-content h3, article.type-post .entry-content .h3, article.type-post .entry-content h4, article.type-post .entry-content .h4, article.type-post .entry-content h5, article.type-post .entry-content .h5, article.type-post .entry-content h6, article.type-post .entry-content .h6 {

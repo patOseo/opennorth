@@ -5,8 +5,11 @@ html {
 body {
     height: auto;
     -webkit-font-smoothing: antialiased;
-    font-size: 1.25rem;
-
+    
+    @include media-breakpoint-up(md) {
+        font-size: 1.25rem;
+    }
+    
     a {
         text-underline-offset: 2px;
         text-decoration-thickness: 1px !important;
