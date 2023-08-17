@@ -11495,6 +11495,13 @@ body a {
   background: #fa6e57;
 }
 
+@media (min-width: 576px) and (max-width: 1399.98px) {
+  .menu-container {
+    width: 100%;
+    max-width: calc(100vw - 40px);
+  }
+}
+
 #main-nav {
   padding: 15px 30px;
   border-radius: 36px;

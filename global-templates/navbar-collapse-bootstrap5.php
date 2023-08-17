@@ -11,7 +11,7 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 
-<div class="container px-lg-0">
+<div class="container menu-container">
 	<nav id="main-nav" class="d-flex justify-content-between navbar navbar-expand-xl navbar-light bg-white" aria-labelledby="main-nav-label">
 
 		<p id="main-nav-label" class="screen-reader-text">

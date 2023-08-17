@@ -1,3 +1,10 @@
+.menu-container {
+    @include media-breakpoint-between(sm, xxl) {
+        width: 100%;
+        max-width: calc(100vw - 40px);
+    }
+}
+
 #main-nav {
     padding: 15px 30px;
     border-radius: 36px;
