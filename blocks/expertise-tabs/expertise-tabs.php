@@ -54,7 +54,7 @@ $tabids = array();
                         <?php 
                         $learnmore = get_sub_field('learn_more'); 
                         if($learnmore): ?>
-                            <div class="bg-deepblue px-4 px-lg-6 pt-6 pb-1 pb-lg-6 rounded-5" uk-scrollspy="cls: uk-animation-slide-bottom-medium">
+                            <div class="bg-deepblue px-4 px-lg-6 pt-6 pb-1 pb-lg-6 rounded-5" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 150;">
                                 <div class="row mb-5">
                                     <div class="col-12">
                                         <h2 class="text-white"><?php echo $learnmore['heading']; ?></h2>
