@@ -1,9 +1,9 @@
 <?php
 
 function add_class_to_current_menu_link($atts, $item, $args) {
-    $atts['class'] = 'nav-link ps-xl-auto rounded';
+    $atts['class'] = 'nav-link mx-xl-2 ps-2 ps-xl-3 py-1 rounded';
     if (in_array('current-menu-item', $item->classes)) {
-        $atts['class'] = 'nav-link ps-2 ps-xl-auto bg-primary text-white rounded';
+        $atts['class'] = 'nav-link mx-xl-2 ps-2 ps-xl-3 py-1 bg-primary text-white rounded';
     }
     return $atts;
 }

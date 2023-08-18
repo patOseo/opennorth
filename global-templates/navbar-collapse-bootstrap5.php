@@ -44,8 +44,8 @@ defined( 'ABSPATH' ) || exit;
 
 			<div class="main-menu-container col-12 col-xl-auto">
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
-					<div class="row mx-0 px-0 py-4 py-lg-0 align-items-center">
-						<div class="col-6 col-xl-auto order-first px-0">
+					<div class="row mx-0 px-0 py-4 py-xl-0 align-items-center">
+						<div class="col-6 col-xl-auto order-first px-0 me-0">
 							<!-- The WordPress Menu goes here -->
 							<?php
 							wp_nav_menu(
@@ -63,11 +63,11 @@ defined( 'ABSPATH' ) || exit;
 							?>
 						</div>
 
-						<div class="col-12 col-xl-auto order-3 order-xl-2 px-0 pt-4 pt-xl-0 d-block d-xl-inline search-btn align-self-top mx-xl-3">
+						<div class="col-12 col-xl-auto order-3 order-xl-2 px-0 pt-4 pt-xl-0 d-block d-xl-inline search-btn align-self-top mx-xl-6">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-search.svg" alt="Search" width="32" height="32">
 						</div>
 					
-						<div class="col-6 col-xl-auto order-2 order-xl-3 px-0 d-block d-xl-inline ms-xl-4 align-self-start text-end text-xl-start">
+						<div class="col-6 col-xl-auto order-2 order-xl-3 px-0 d-block d-xl-inline align-self-start text-end text-xl-start">
 							<?php get_template_part('global-templates/lang-switcher'); ?>
 						</div>
 					</div>
