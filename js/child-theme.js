@@ -16624,6 +16624,9 @@
 	        area: selectedCourseType,
 	        search: searchCourseTerm
 	      },
+	      beforeSend: function () {
+	        $('#filteredCourses').html('<div class="my-6 py-6 text-center"><div class="my-lg-6 spinner-grow text-white text-center mx-auto" role="status"><span class="visually-hidden">Loading...</span></div></div>');
+	      },
 	      success: function (response) {
 	        $('#filteredCourses').html(response);
 	      }
