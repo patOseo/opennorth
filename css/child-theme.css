@@ -12391,8 +12391,13 @@ body a {
 }
 #main-nav .menu-item .nav-link {
   color: #00078A;
-  font-size: 1.25rem;
+  font-size: 1rem;
   transition: background-color 0.2s;
+}
+@media (min-width: 576px) {
+  #main-nav .menu-item .nav-link {
+    font-size: 1.25rem;
+  }
 }
 
 #wrapper-footer {

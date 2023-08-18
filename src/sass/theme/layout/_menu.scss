@@ -27,8 +27,12 @@
     .menu-item {
         .nav-link {
             color: $deepblue;
-            font-size: $h5-font-size;
+            font-size: $h6-font-size;
             transition: background-color .2s;
+        
+            @include media-breakpoint-up(sm) {
+                font-size: $h5-font-size;
+            }
         }
     }
     

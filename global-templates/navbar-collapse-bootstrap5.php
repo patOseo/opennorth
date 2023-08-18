@@ -64,7 +64,10 @@ defined( 'ABSPATH' ) || exit;
 						</div>
 
 						<div class="col-12 col-xl-auto order-3 order-xl-2 px-0 pt-4 pt-xl-0 d-block d-xl-inline search-btn align-self-top <?php if(lang_en()) { echo 'mx-xl-6'; } elseif(lang_fr()) { echo 'mx-xl-3'; } ?>">
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-search.svg" alt="Search" width="32" height="32">
+							<div class="row align-items-center"> 
+								<div class="col-10 d-xl-none"><input class="px-3 w-100 form-control border-primary bg-white" type="text" placeholder="Search..."></div>
+								<div class="col-2 col-xl-12"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-search.svg" alt="Search" width="32" height="32"></div>
+							</div>
 						</div>
 					
 						<div class="col-6 col-xl-auto order-2 order-xl-3 px-0 d-block d-xl-inline align-self-start text-end text-xl-start">
