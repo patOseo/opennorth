@@ -2,6 +2,18 @@
 
     <div class="col-lg-9">
 
+        <?php $rtype = get_the_terms(get_the_ID(), 'resource_type');  
+        if($rtype): ?>
+            <div class="resource-type mb-3 uk-animation-slide-bottom-medium">
+                <?php foreach($rtype as $type): ?>
+                    <?php if($type->name == 'Uncategorized') { continue; } ?>
+                    <button class="d-inline btn pe-none text-white text-uppercase bg-secondary border-0 py-1 text-center">
+                        <?php echo $type->name; ?>
+                    </button>
+                <?php endforeach; ?>
+            </div>
+        <?php endif; ?>
+
         <?php if(!is_singular('jobs')): ?>
         <div class="article-date mb-3 ff-inconsolata text-secondary text-uppercase fw-bolder">
             <?php echo get_the_date('d M Y'); ?>
