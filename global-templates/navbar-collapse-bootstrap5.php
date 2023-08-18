@@ -63,7 +63,7 @@ defined( 'ABSPATH' ) || exit;
 							?>
 						</div>
 
-						<div class="col-12 col-xl-auto order-3 order-xl-2 px-0 pt-4 pt-xl-0 d-block d-xl-inline search-btn align-self-top mx-xl-6">
+						<div class="col-12 col-xl-auto order-3 order-xl-2 px-0 pt-4 pt-xl-0 d-block d-xl-inline search-btn align-self-top <?php if(lang_en()) { echo 'mx-xl-6'; } elseif(lang_fr()) { echo 'mx-xl-3'; } ?>">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-search.svg" alt="Search" width="32" height="32">
 						</div>
 					
