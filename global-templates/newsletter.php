@@ -10,7 +10,7 @@ if(get_field('blue_background')) {
 	$textcolor = 'text-deepblue';
 }
 ?>
-<div class="container newsletter-container px-4 px-lg-0">
+<div class="container newsletter-container px-0 px-sm-4 px-lg-0">
 	<div class="newsletter-box d-inline-block my-5 p-5 p-md-6 rounded-3 <?= $bg; ?>" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 200; repeat: true">
 	    <div class="row justify-content-between align-items-center">
 	        <div class="col-lg-6 col-xl-6 mb-5 mb-lg-0">
