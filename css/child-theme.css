@@ -13159,6 +13159,25 @@ body a {
   outline: solid;
   outline-color: #F94A2D;
 }
+@media (max-width: 575.98px) {
+  .filter-buttons .filter-list-box {
+    max-height: 160px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+.filter-buttons .filter-list-box::-webkit-scrollbar {
+  padding-left: 6px;
+  width: 8px;
+}
+.filter-buttons .filter-list-box::-webkit-scrollbar-track {
+  background: #2E16BF;
+  border-radius: 8px;
+}
+.filter-buttons .filter-list-box::-webkit-scrollbar-thumb {
+  background: #F94A2D;
+  border-radius: 8px;
+}
 
 #buttonSearch {
   cursor: pointer;

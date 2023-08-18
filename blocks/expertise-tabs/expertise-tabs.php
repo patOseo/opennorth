@@ -13,7 +13,7 @@ $tabids = array();
                 $tabid = str_replace(' ', '', $tabid);
                 $tabids[] = $tabid;
             ?>
-            <div class="block-tab col-6 text-start <?php if($i == array_key_first($tabs)) { echo 'active'; } ?>" id="<?= removeAccents($tabids[$i]); ?>Tab" role="presentation" data-bs-toggle="tab" data-bs-target="#<?= $tabids[$i]; ?>"> 
+            <div class="block-tab col-12 col-sm-6 mb-2 mb-sm-0 text-start <?php if($i == array_key_first($tabs)) { echo 'active'; } ?>" id="<?= removeAccents($tabids[$i]); ?>Tab" role="presentation" data-bs-toggle="tab" data-bs-target="#<?= $tabids[$i]; ?>"> 
                 <div class="p-3 p-lg-6 pt-lg-4 block-tab-content rounded-5 bg-lightgrey active-secondary active-bgimg h-100" uk-scrollspy="target: svg; cls: uk-animation-stroke; delay: 200">
                     <div class="mb-0 mb-lg-2"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-expertise-<?php echo $i + 1; ?>.svg" alt="Expertise icon" uk-svg="stroke-animation:true"></div>
                     <div class="h2 tab-title mb-2 px-0 text-darkgrey"><?= $group['heading']; ?></div>
@@ -54,7 +54,7 @@ $tabids = array();
                         <?php 
                         $learnmore = get_sub_field('learn_more'); 
                         if($learnmore): ?>
-                            <div class="bg-deepblue px-4 px-lg-6 pt-6 pb-1 pb-lg-6 rounded-5" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 150;">
+                            <div class="bg-deepblue mx-n3 mx-sm-0 px-4 px-lg-6 pt-6 pb-1 pb-lg-6 rounded-5" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 150;">
                                 <div class="row mb-5">
                                     <div class="col-12">
                                         <h2 class="text-white"><?php echo $learnmore['heading']; ?></h2>

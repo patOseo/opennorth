@@ -14,6 +14,29 @@
             outline-color: $red;
         }
     }
+
+    .filter-list-box {
+        @include media-breakpoint-down(sm) {
+            max-height: 160px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        &::-webkit-scrollbar {
+            padding-left: 6px;
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: $hyperblue;
+            border-radius: 8px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $red;
+            border-radius: 8px;
+        }
+    }
 }
 
 #buttonSearch {
