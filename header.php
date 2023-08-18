@@ -41,7 +41,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 		</header><!-- #wrapper-navbar -->
 	
 	<?php if(is_single()): ?>
-			<div class="container px-lg-5 pt-5 uk-animation-slide-bottom-small">
+			<div class="container px-lg-5 pt-lg-5 uk-animation-slide-bottom-small">
 				<?php get_template_part('loop-templates/content', 'header'); ?>
 			</div>
 		</div>

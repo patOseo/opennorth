@@ -1,4 +1,4 @@
-<header class="entry-header py-5">
+<header class="entry-header pt-5 pb-0 pb-lg-5">
 
     <div class="col-lg-9">
 
@@ -46,7 +46,7 @@
             <div class="resource-categories mb-5" uk-scrollspy="target: button; cls: uk-animation-slide-bottom-medium; delay: 200">
                 <?php foreach($cats as $cat): ?>
                     <?php if($cat->name == 'Uncategorized') { continue; } ?>
-                    <button class="d-inline btn pe-none text-white text-uppercase bg-primary border-0 py-1 text-center">
+                    <button class="d-inline btn pe-none text-white text-uppercase bg-primary border-0 mb-1 mb-lg-0 py-1 text-center">
                         <?php echo $cat->name; ?>
                     </button>
                 <?php endforeach; ?>

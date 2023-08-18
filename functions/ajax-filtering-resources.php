@@ -54,7 +54,6 @@ function opennorth_ajax_filter_resources() {
         $args['s'] = $sanitizeSearch;
         $args['order'] = 'DESC';
         $args['orderby'] = array(
-            'title' => 'DESC',
             'relevance' => 'DESC'
         );
     }
