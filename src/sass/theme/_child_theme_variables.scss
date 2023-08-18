@@ -92,5 +92,7 @@ $container-max-widths: (
   xxl: 1380px
 ) !default;
 
+$enable-negative-margins: true;
+
 // NAV LINKS
 $navbar-nav-link-padding-x: 1.25rem;

@@ -27,7 +27,7 @@ defined( 'ABSPATH' ) || exit;
 			</a>
 
 			<button
-				class="navbar-toggler border-0"
+				class="navbar-toggler border-0 col-auto text-end"
 				id="navbarToggler"
 				type="button"
 				data-bs-toggle="collapse"
@@ -36,31 +36,42 @@ defined( 'ABSPATH' ) || exit;
 				aria-expanded="false"
 				aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>"
 			>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-menu.svg" width="30" height="30">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
 			</button>
 
-			<div class="main-menu-container align-items-center d-xl-flex col-12 col-xl-auto">
-				<!-- The WordPress Menu goes here -->
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse',
-						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav ms-auto',
-						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
-						'depth'           => 2,
-						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-					)
-				);
-				?>
+			<div class="main-menu-container col-12 col-xl-auto">
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<div class="row mx-0 px-0 py-4 py-lg-0 align-items-center">
+						<div class="col-6 col-xl-auto order-first px-0">
+							<!-- The WordPress Menu goes here -->
+							<?php
+							wp_nav_menu(
+								array(
+									'theme_location'  => 'primary',
+									'container_class' => '',
+									'container_id'    => '',
+									'menu_class'      => 'navbar-nav ms-auto',
+									'fallback_cb'     => '',
+									'menu_id'         => 'main-menu',
+									'depth'           => 2,
+									'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+								)
+							);
+							?>
+						</div>
 
-				<div class="d-none d-xl-inline-block search-btn mx-3">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-search.svg" alt="Search" width="32" height="32">
+						<div class="col-12 col-xl-auto order-3 order-xl-2 px-0 pt-4 pt-xl-0 d-block d-xl-inline search-btn align-self-top mx-xl-3">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-search.svg" alt="Search" width="32" height="32">
+						</div>
+					
+						<div class="col-6 col-xl-auto order-2 order-xl-3 px-0 d-block d-xl-inline ms-xl-4 align-self-start text-end text-xl-start">
+							<?php get_template_part('global-templates/lang-switcher'); ?>
+						</div>
+					</div>
 				</div>
-
-				<?php get_template_part('global-templates/lang-switcher'); ?>
 			</div>
 
 	</nav><!-- #main-nav -->

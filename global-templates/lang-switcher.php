@@ -1,6 +1,6 @@
 <?php $langs = array('en', 'fr'); ?>
 
-<div class="lang-selector d-none d-xl-inline-block ms-4">
+<div class="lang-selector">
     <?php foreach($langs as $lang): ?>
         <?php
             $other_lang = null;

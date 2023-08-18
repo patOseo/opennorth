@@ -1,4 +1,10 @@
 jQuery(function($){
+    // Mobile Menu Icon
+    $('#navbarToggler').on('click', function() {
+        $(this).toggleClass('open');
+    });
+
+
     // Enable linking to Bootstrap tabs
     window.addEventListener('load', function() {
         // Check if the URL contains a hash

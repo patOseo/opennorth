@@ -26,7 +26,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 	<?php if(is_single()): ?>
-		<div class="header-section mb-5 bg-deepblue text-white">
+		<div class="header-section mb-5 pb-3 bg-deepblue text-white">
 	<?php endif; ?>
 		
 		<!-- ******************* The Navbar Area ******************* -->
