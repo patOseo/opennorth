@@ -13406,6 +13406,10 @@ body a {
 }
 .table-of-contents .nav-link {
   border-radius: 4px;
+  color: #2E16BF;
+}
+.table-of-contents .nav-link:hover {
+  color: #251299;
 }
 
 .report-section {

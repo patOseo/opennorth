@@ -34,6 +34,11 @@
 
 	.nav-link {
 		border-radius: 4px;
+        color: $primary;
+
+        &:hover {
+            color: shade-color($primary, 20%);
+        }
 	}
 }
 
