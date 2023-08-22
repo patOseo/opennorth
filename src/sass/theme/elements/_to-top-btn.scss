@@ -1,0 +1,22 @@
+#toTopButton {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    border: 0;
+    background: $hyperblue;
+    transition: background-color .3s, opacity .3s, transform .3s;
+
+    @include media-breakpoint-up(md) {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    &.hidden {
+        opacity: 0;
+        transform: translateY(2.5rem);
+    }
+
+    img,svg {
+        transform: rotate(180deg);
+    }
+}

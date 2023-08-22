@@ -1,0 +1,48 @@
+.tableContents-container {
+    scroll-padding-top: 60px;
+}
+
+.table-of-contents {
+	background: $lightgrey;
+	position: sticky;
+	top: 20px;
+	max-height: 92vh;
+	overflow-y: scroll;
+	font-size: .85rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+	&::-webkit-scrollbar {
+        padding: 8px;
+
+	}
+	
+	&::-webkit-scrollbar-track {
+	    background: $lightgrey;
+        border-radius: 1rem;
+	}
+	
+	&::-webkit-scrollbar-thumb {
+	    border-radius: 1rem;
+	    background: $hyperblue;
+	}
+
+	a.table-header {
+		border-bottom: 1px solid $lightgrey;
+		text-decoration: none;
+	}
+
+	.nav-link {
+		border-radius: 4px;
+	}
+}
+
+.report-section {
+	word-break: break-word;
+
+    &:first-child {
+        h2 {
+            margin-top: 0;
+        }
+    }
+}

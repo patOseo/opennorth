@@ -16506,6 +16506,24 @@
 	    $(this).toggleClass('open');
 	  });
 
+	  // toTopButton
+	  $(window).scroll(function () {
+	    if ($(this).scrollTop() > 300) {
+	      $('#toTopButton').removeClass('hidden');
+	    } else {
+	      $('#toTopButton').addClass('hidden');
+	    }
+	  });
+
+	  // Smoothly scroll back to top when the button is clicked
+	  $('#toTopButton').click(function (event) {
+	    event.preventDefault();
+	    window.scrollTo({
+	      top: 0,
+	      behavior: 'smooth'
+	    });
+	  });
+
 	  // Enable linking to Bootstrap tabs
 	  window.addEventListener('load', function () {
 	    // Check if the URL contains a hash

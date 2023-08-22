@@ -1,3 +1,7 @@
+<?php
+$projects = apply_filters('wpml_object_id', 98, 'resource_type', false);
+?>
+
 <header class="entry-header pt-5 pb-0 pb-lg-5">
 
     <div class="col-lg-9">
@@ -15,9 +19,12 @@
         <?php endif; ?>
 
         <?php if(!is_singular('jobs')): ?>
-        <div class="article-date mb-3 ff-inconsolata text-secondary text-uppercase fw-bolder">
-            <?php echo get_the_date('d M Y'); ?>
-        </div>
+                <?php $proj_found = false; foreach($rtype as $type) { if($type->term_id == $projects) { $proj_found = true; break; } } ?>
+                <?php if(!$proj_found): ?>
+                    <div class="article-date mb-3 ff-inconsolata text-secondary text-uppercase fw-bolder">
+                        <?php echo get_the_date('d M Y'); ?>
+                    </div>
+                <?php endif; ?>
         <?php endif; ?>
 
 	    <?php the_title( '<h1 class="entry-title mb-4 fw-light display-5">', '</h1>' ); ?>

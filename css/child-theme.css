@@ -13017,6 +13017,28 @@ body a {
   background-color: #e04329 !important;
 }
 
+#toTopButton {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  border: 0;
+  background: #2E16BF;
+  transition: background-color 0.3s, opacity 0.3s, transform 0.3s;
+}
+@media (min-width: 768px) {
+  #toTopButton {
+    bottom: 2rem;
+    right: 2rem;
+  }
+}
+#toTopButton.hidden {
+  opacity: 0;
+  transform: translateY(2.5rem);
+}
+#toTopButton img, #toTopButton svg {
+  transform: rotate(180deg);
+}
+
 .border-offset:after {
   content: "";
   position: absolute;
@@ -13351,6 +13373,46 @@ body a {
   background: linear-gradient(180deg, rgba(237, 65, 35, 0.93) 0, rgba(221, 37, 5, 0.96) 100%), url("/wp-content/themes/opennorth/images/background-street.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.tableContents-container {
+  scroll-padding-top: 60px;
+}
+
+.table-of-contents {
+  background: #F2F2F2;
+  position: sticky;
+  top: 20px;
+  max-height: 92vh;
+  overflow-y: scroll;
+  font-size: 0.85rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.table-of-contents::-webkit-scrollbar {
+  padding: 8px;
+}
+.table-of-contents::-webkit-scrollbar-track {
+  background: #F2F2F2;
+  border-radius: 1rem;
+}
+.table-of-contents::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #2E16BF;
+}
+.table-of-contents a.table-header {
+  border-bottom: 1px solid #F2F2F2;
+  text-decoration: none;
+}
+.table-of-contents .nav-link {
+  border-radius: 4px;
+}
+
+.report-section {
+  word-break: break-word;
+}
+.report-section:first-child h2, .report-section:first-child .h2 {
+  margin-top: 0;
 }
 
 .home-values img[hidden] {

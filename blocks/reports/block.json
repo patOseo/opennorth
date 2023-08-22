@@ -1,0 +1,13 @@
+{
+    "name": "acf/reports",
+    "title": "Full Report",
+    "description": "A custom block to create a full report document.",
+    "category": "opennorth",
+    "icon": "list-view",
+    "keywords": ["reports", "full report"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "reports.php"
+    },
+    "align": "full"
+}

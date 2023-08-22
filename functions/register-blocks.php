@@ -15,4 +15,5 @@ function register_acf_blocks() {
     register_block_type( __DIR__ . '/../blocks/expertise-panel' );
     register_block_type( __DIR__ . '/../blocks/icon' );
     register_block_type( __DIR__ . '/../blocks/careers' );
+    register_block_type( __DIR__ . '/../blocks/reports' );
 }

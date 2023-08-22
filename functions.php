@@ -95,6 +95,7 @@ add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_co
 
 
 // Custom Theme Functions
+@require_once('functions/post-labels.php');
 @require_once('functions/roles.php');
 @require_once('functions/login.php');
 @require_once('functions/dashboard.php');
