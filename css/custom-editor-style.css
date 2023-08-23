@@ -13161,7 +13161,6 @@ body a {
   bottom: 1rem;
   right: 1rem;
   border: 0;
-  background: #2E16BF;
   transition: background-color 0.3s, opacity 0.3s, transform 0.3s;
 }
 @media (min-width: 768px) {
@@ -13175,6 +13174,7 @@ body a {
   transform: translateY(2.5rem);
 }
 #toTopButton img, #toTopButton svg {
+  margin-top: -2px;
   transform: rotate(180deg);
 }
 

@@ -22,7 +22,7 @@ if(get_field('blue_background')) {
 			        <div class="row">
 			        	<div class="col-12 col-sm-6 col-md-8 mb-2 mb-sm-0 px-1 mx-0">
 			        		<label for="email" class="visually-hidden">Email</label>
-			        		<input type="text" class="subscription__input px-3 w-100 h-100" id="email" placeholder="<?php if(lang_en()) { echo 'Email'; } elseif(lang_fr()) { echo 'Courriel'; } ?>" name="EMAIL">
+			        		<input type="text" class="subscription__input px-3 py-2 w-100 h-100" id="email" placeholder="<?php if(lang_en()) { echo 'Email'; } elseif(lang_fr()) { echo 'Courriel'; } ?>" name="EMAIL">
 			        		<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a602fac79ef3dc584bf1a2743_1e0c02fa29" tabindex="-1" value=""></div>
 			        	</div>
 			        	<div class="col-12 col-sm-6 col-md-4 mb-2 mb-sm-0 px-1 mx-0">

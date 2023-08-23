@@ -3,7 +3,6 @@
     bottom: 1rem;
     right: 1rem;
     border: 0;
-    background: $hyperblue;
     transition: background-color .3s, opacity .3s, transform .3s;
 
     @include media-breakpoint-up(md) {
@@ -17,6 +16,7 @@
     }
 
     img,svg {
+        margin-top: -2px;
         transform: rotate(180deg);
     }
 }

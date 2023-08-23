@@ -13,8 +13,9 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 <?php if(is_single()): // Add the topTopButton if it's a Resources page ?>
-	<button id="toTopButton" class="hidden btn btn-primary p-2 rounded-2" aria-label="Scroll to Top" role="button" tabindex="0"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-arrow.svg" width="18" alt="Back to Top"></button>
+	<button id="toTopButton" class="hidden btn btn-primary p-3 rounded-circle" aria-label="Scroll to Top" role="button" tabindex="0"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-arrow.svg" width="16" alt="Back to Top"></button>
 <?php endif; ?>
+
 <div class="wrapper footer-wrapper py-5" id="wrapper-footer">
 
 	<div class="container">
