@@ -4,6 +4,13 @@ jQuery(function($){
         $(this).toggleClass('open');
     });
 
+    // Search Menu Icon
+    $('#searchToggler').on('click', function(event) {
+        event.preventDefault();
+        $('#searchInput').toggleClass('d-xl-none');
+        $('#searchIcon').toggleClass('col-xl-12');
+    });
+
     // toTopButton
     $(window).scroll(function() {
         if ($(this).scrollTop() > 300) {

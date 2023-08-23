@@ -63,7 +63,7 @@ if(lang_en()) {
         </div>
     </div>
     <div class="resources-sort">
-        <div class="row">
+        <div class="row mx-0">
             <div class="col-lg-4 px-0">
                 <button id="sortResources" value="DESC" class="px-0 btn btn-lg btn-primary bg-transparent d-inline mt-3 mb-0 me-2 fw-bold border-0">
                     <span><?php if(lang_en()) { echo 'Newest first'; } elseif(lang_fr()) { echo 'Les plus récents en premier'; } ?></span>  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-arrow.svg" alt="Arrow" class="transition-1s">

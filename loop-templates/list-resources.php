@@ -4,11 +4,11 @@ if ($query->have_posts()):
     $rtype = get_the_terms(get_the_ID(), 'resource_type');
     $projects = apply_filters('wpml_object_id', 98, 'resource_type', false);
 ?>
-<div class="row resource-row align-items-center border-bottom <?php if($query->current_post === 0) { echo 'border-top'; } ?> py-5">
-    <div class="col-lg-9">
+<div class="row resource-row mx-0 align-items-center border-bottom <?php if($query->current_post === 0) { echo 'border-top'; } ?> py-5">
+    <div class="col-lg-9 ps-0">
         <h2 class="mb-4 mb-lg-0 fw-normal"><a class="text-decoration-none link-light" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
     </div>
-    <div class="col-lg-3">
+    <div class="col-lg-3 pe-0">
         <div class="resource-meta text-end">
             <?php $proj_found = false; foreach($rtype as $type) { if($type->term_id == $projects) { $proj_found = true; break; } } 
             if(!$proj_found): ?>

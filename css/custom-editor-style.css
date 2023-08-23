@@ -12511,6 +12511,10 @@ body a {
   }
 }
 
+#searchIcon {
+  cursor: pointer;
+}
+
 #main-nav {
   padding: 15px 30px;
   border-radius: 36px;
@@ -13094,9 +13098,18 @@ body a {
 }
 
 .entry-content > .wp-block-group > .wp-block-group,
-.entry-content > .wp-block-group > .wp-block-columns {
+.entry-content > .wp-block-group > .wp-block-columns,
+.content-container {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+@media (min-width: 992px) {
+  .entry-content > .wp-block-group > .wp-block-group,
+  .entry-content > .wp-block-group > .wp-block-columns,
+  .content-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 .ff-inconsolata {
