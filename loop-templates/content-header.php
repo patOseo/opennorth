@@ -60,6 +60,17 @@ $projects = apply_filters('wpml_object_id', 98, 'resource_type', false);
             </div>
         <?php endif; ?>
 
+        <?php if(get_field('pdf_file') || get_field('pdf_link')): ?>
+            <?php 
+                if(get_field('file_or_link') == 1) {
+                    $pdf = get_field('pdf_file');
+                } else {
+                    $pdf = get_field('pdf_link');
+                }
+            ?>
+            <a class="btn btn-secondary" href="<?php echo esc_url($pdf); ?>" target="_blank" rel="noopener,noreferrer">View PDF Version <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-external-link.svg" alt="External Link"></a>
+        <?php endif; ?>
+
     </div>
 
 </header><!-- .entry-header -->
