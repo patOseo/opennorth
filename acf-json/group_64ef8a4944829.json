@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 1,
+            "wpml_cf_preferences": 3,
             "message": "",
             "default_value": 1,
             "ui_on_text": "File",
@@ -45,7 +45,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 1,
+            "wpml_cf_preferences": 3,
             "return_format": "url",
             "library": "all",
             "min_size": "",
@@ -74,7 +74,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 1,
+            "wpml_cf_preferences": 3,
             "default_value": "",
             "placeholder": ""
         }
@@ -102,6 +102,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "acfml_field_group_mode": "translation",
-    "modified": 1693420595
+    "acfml_field_group_mode": "advanced",
+    "modified": 1693428925
 }
