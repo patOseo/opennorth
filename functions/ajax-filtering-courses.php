@@ -1,5 +1,9 @@
 <?php 
 function opennorth_ajax_filter_courses() {
+    if(isset($_POST['page'])) {
+        $page = $_POST['page'];
+    }
+
     // Grab the filter values from $_POST
     if(isset($_POST['area']) && !in_array('all', $_POST['area'])) {
         $course_area = $_POST['area'];
@@ -11,14 +15,21 @@ function opennorth_ajax_filter_courses() {
         $sanitizeSearch = sanitize_text_field($searchTerm);
     }
 
+    if(isset($_POST['page'])) {
+        $paged = $_POST['page'];
+    } else {
+        $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+    }
+
     // Load values into the query args
     $args = array(
         'post_type' => 'course',
+        'post_status' => 'publish',
         'posts_per_page' => 9,
         'meta_key' => 'course_id',
         'orderby' => 'meta_value',
         'order' => 'ASC',
-        'paged' => get_query_var( 'paged' )
+        'paged' => $paged
     );
 
     if(isset($course_area)) {
@@ -31,6 +42,7 @@ function opennorth_ajax_filter_courses() {
                 'taxonomy' => 'area',
                 'field'    => 'slug',
                 'terms'    => $course_area,
+                'paged'          => $paged
         );
     }
 

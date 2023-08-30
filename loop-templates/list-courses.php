@@ -26,11 +26,18 @@ if($query->have_posts()): ?>
              </div>
          </div>
     <?php endwhile; ?>
-    <?php understrap_pagination( [
+    <?php 
+    $pagination_args = array(
         'total' => $query->max_num_pages,
+        'base' => '/online-courses/%_%',
         'prev_text' => '&#60;',
         'next_text' => '&#62;',
-    ], 'pagination ff-inconsolata fw-bold' ); ?>
+    );
+    if(isset($_POST['page'])) {
+        $page = $_POST['page'];
+        $pagination_args['current'] = $page;
+    }
+    understrap_pagination( $pagination_args, 'pagination ff-inconsolata fw-bold' ); ?>
 </div>
 
 <?php 

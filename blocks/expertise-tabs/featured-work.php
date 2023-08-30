@@ -4,7 +4,7 @@
             <?php if(lang_en()) { echo 'Featured work'; } elseif(lang_fr()) { echo 'Notre travail en vedette'; } ?>
         </div>
         <div class="ff-inconsolata arrow-link">
-            <a class="text-white" href="/resources/">
+            <a class="text-white" href="<?php echo get_permalink(apply_filters('wpml_object_id', 72, 'post')); ?>">
                 <?php if(lang_en()) { echo 'See all'; } elseif(lang_fr()) { echo 'Voir tout'; } ?>
             </a>
         </div>

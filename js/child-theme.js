@@ -16586,6 +16586,7 @@
 	  });
 
 	  // Filter Resources
+	  var currentPage = 1;
 	  function filterResources() {
 	    var selectedResourceType = $('input[name="rtype"]:checked').map(function () {
 	      return $(this).val();
@@ -16598,9 +16599,10 @@
 	    $.ajax({
 	      url: '/wp-admin/admin-ajax.php',
 	      // WordPress provides the 'ajaxurl' global variable
-	      type: 'post',
+	      type: 'POST',
 	      data: {
 	        action: 'filter_resources',
+	        page: currentPage,
 	        rtype: selectedResourceType,
 	        subject: selectedResourceSubject,
 	        search: searchResourceTerm,
@@ -16646,6 +16648,7 @@
 	      type: 'post',
 	      data: {
 	        action: 'filter_courses',
+	        page: currentPage,
 	        area: selectedCourseType,
 	        search: searchCourseTerm
 	      },
@@ -16659,7 +16662,10 @@
 	  }
 
 	  // Filter Resources
-	  $('#filterResources input[type="checkbox"').on('change', filterResources);
+	  $('#filterResources input[type="checkbox"').on('change', function () {
+	    currentPage = 1;
+	    filterResources();
+	  });
 	  $('#filterResources #resourceSearch').on('keydown', function (event) {
 	    if (event.keyCode == 13) {
 	      filterResources();
@@ -16667,15 +16673,40 @@
 	  });
 	  $('#filterResources #buttonSearch').on('click', filterResources);
 	  $('#filterResources #sortResources').on('click', changeSortValue);
+	  // Pagination handling
+	  $(document).on('click', '.resources .pagination a', function (e) {
+	    e.preventDefault();
+	    $(this).attr('href');
+	    currentPage = $(this).attr('data-page'); // Update the page number from pagination links
+	    // Scroll to top of Resource list
+	    $('html, body').animate({
+	      scrollTop: $('#filteredResources').offset().top - 200
+	    }, 200);
+	    filterResources();
+	  });
 
 	  // Filter Courses
-	  $('#filterCourses input[type="checkbox"').on('change', filterCourses);
+	  $('#filterCourses input[type="checkbox"').on('change', function () {
+	    currentPage = 1;
+	    filterCourses();
+	  });
 	  $('#filterCourses #courseSearch').on('keydown', function (event) {
 	    if (event.keyCode == 13) {
 	      filterCourses();
 	    }
 	  });
 	  $('#filterCourses #buttonSearch').on('click', filterCourses);
+	  // Pagination handling
+	  $(document).on('click', '.courses-list .pagination a', function (e) {
+	    e.preventDefault();
+	    $(this).attr('href');
+	    currentPage = $(this).attr('data-page'); // Update the page number from pagination links
+	    // Scroll to top of Resource list
+	    $('html, body').animate({
+	      scrollTop: $('#filteredCourses').offset().top - 200
+	    }, 200);
+	    filterCourses();
+	  });
 	});
 
 	exports.Alert = alert;

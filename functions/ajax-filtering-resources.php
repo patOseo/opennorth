@@ -1,5 +1,9 @@
 <?php 
 function opennorth_ajax_filter_resources() {
+    if(isset($_POST['page'])) {
+        $page = $_POST['page'];
+    }
+    
     // Grab the filter values from $_POST
     if(isset($_POST['subject']) && !in_array('all', $_POST['subject'])) {
         $resource_cat = $_POST['subject'];
@@ -21,11 +25,17 @@ function opennorth_ajax_filter_resources() {
         $sortOrder = sanitize_text_field($sort);
     }
 
+    if(isset($_POST['page'])) {
+        $paged = $_POST['page'];
+    } else {
+        $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+    }
     // Load values into the query args
     $args = array(
         'post_type'      => 'post',
         'post_status'    => 'publish',
         'posts_per_page' => 20,
+        'paged'          => $paged,
     );
 
     if(isset($resource_cat) && isset($resource_type)) {
@@ -68,7 +78,6 @@ function opennorth_ajax_filter_resources() {
     ob_start();
     include(get_stylesheet_directory() . '/loop-templates/list-resources.php');
     $loop_output = ob_get_clean();
-    
     echo $loop_output;
 
     wp_reset_postdata();

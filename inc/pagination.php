@@ -82,6 +82,14 @@ if ( ! function_exists( 'understrap_pagination' ) ) {
 
 				<?php
 				foreach ( $links as $link ) {
+					// Extract page number from the link
+					$pattern = '/\/page\/(\d+)\//';
+					if(preg_match($pattern, $link, $matches)) {
+						$data_page = intval($matches[1]);
+						// Add the 'data-page' attribute with the extracted page number
+						$link = str_replace('<a', '<a data-page="' . $data_page . '"', $link);
+					}
+
 					?>
 					<li class="page-item <?php echo strpos( $link, 'current' ) ? 'active' : ''; ?>">
 						<?php

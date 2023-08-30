@@ -27,13 +27,20 @@ if ($query->have_posts()):
 <?php endwhile; ?>
 
 <div class="mt-4">
-    <?php 
-    understrap_pagination( [
-            'total' => $query->max_num_pages,
-            'base' => '/resources/%_%#filteredResources',
-            'prev_text' => '&#60;',
-            'next_text' => '&#62;',
-        ], 'pagination ff-inconsolata fw-bold' ); 
+    <?php
+    $resources_page = get_permalink(apply_filters('wpml_object_id', 72, 'post'));
+
+    $pagination_args = array(
+        'total' => $query->max_num_pages,
+        'base' => $resources_page . '%_%',
+        'prev_text' => '&#60;',
+        'next_text' => '&#62;',
+    );
+    if(isset($_POST['page'])) {
+        $page = $_POST['page'];
+        $pagination_args['current'] = $page;
+    }
+    understrap_pagination( $pagination_args, 'pagination ff-inconsolata fw-bold' ); 
     ?>
 </div>
 
