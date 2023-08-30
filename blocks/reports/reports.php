@@ -25,7 +25,7 @@
         <div class="entry-content h-100 position-relative fs-5 fw-light uk-animation-slide-bottom-medium" data-bs-spy="scroll" data-bs-target="#tableContents" data-bs-offset="50" tabindex="0">
             <?php $i = 1; while(have_rows('sections')): the_row(); ?>
                 <div class="report-section mb-4" id="section-<?= $i; ?>">
-                    <h2><?php the_sub_field('section_title'); ?></h2>
+                    <h2 class="section-title bg-gradient-blue text-white p-3 rounded-3"><?php the_sub_field('section_title'); ?></h2>
                     <div class="section-content"><?php the_sub_field('content'); ?></div>
 
                     <?php if(have_rows('sub_section')): ?>
@@ -33,7 +33,7 @@
                         <?php $ii = 1; while(have_rows('sub_section')): the_row(); ?>
 
                             <div class="sub-section mb-4" id="section-<?= $i; ?>-<?= $ii; ?>">
-                                <h3><?php the_sub_field('sub_section_title'); ?></h3>
+                                <h3 class="section-subtitle bg-lightgrey p-3 rounded-3"><?php the_sub_field('sub_section_title'); ?></h3>
                                 <div class="sub-section-content"><?php the_sub_field('sub_section_content'); ?></div>
                             </div>
 
