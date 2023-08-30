@@ -12,7 +12,7 @@ if ($query->have_posts()):
         <div class="resource-meta text-end">
             <?php $proj_found = false; foreach($rtype as $type) { if($type->term_id == $projects) { $proj_found = true; break; } } 
             if(!$proj_found): ?>
-            <div class="resource-date ff-inconsolata d-inline-block mx-3">
+            <div class="resource-date ff-inconsolata text-white d-inline-block mx-3">
                 <p class="mb-0 lh-1 fs-6"><?php echo get_the_date('d M Y'); ?></p>
             </div>
             <?php endif; ?>
