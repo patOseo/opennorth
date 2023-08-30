@@ -13460,6 +13460,38 @@ body a {
   left: 50%;
 }
 
+.entry-content blockquote {
+  position: relative;
+  margin: 65px 0 70px;
+  padding: 48px 0;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+  font-style: normal;
+}
+.entry-content blockquote:before {
+  content: url("/wp-content/themes/opennorth/images/icon-quote.svg");
+  position: absolute;
+  padding: 10px 20px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FFF;
+}
+.entry-content blockquote p {
+  border: none;
+  padding: none;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 0 !important;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+.entry-content blockquote .blockquote-footer, .entry-content blockquote .wp-block-quote cite, .wp-block-quote .entry-content blockquote cite {
+  margin-top: 1rem;
+  text-align: center;
+}
+
 .block-tabs .block-tab {
   cursor: pointer;
   transition: 0.2s;
