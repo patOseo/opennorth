@@ -13337,6 +13337,8 @@ body a {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #FFF;
+  width: 80px;
+  height: 50px;
 }
 .entry-content blockquote p {
   border: none;
