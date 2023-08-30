@@ -13538,14 +13538,16 @@ body a {
   max-height: 92vh;
   overflow-y: scroll;
   font-size: 0.85rem;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .table-of-contents::-webkit-scrollbar {
-  padding: 8px;
+  width: 8px;
 }
 .table-of-contents::-webkit-scrollbar-track {
-  background: #F2F2F2;
+  background: #bfbfbf;
   border-radius: 1rem;
 }
 .table-of-contents::-webkit-scrollbar-thumb {

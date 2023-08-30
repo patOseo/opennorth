@@ -2,7 +2,7 @@
 
 <div class="row">
     <div class="col-md-3 position-relative tableContents-container uk-animation-slide-bottom-medium">
-        <nav id="tableContents" class="navbar table-of-contents position-sticky align-items-stretch rounded-4 mb-4 mb-md-0 p-3">
+        <nav id="tableContents" class="navbar table-of-contents position-sticky align-items-stretch mb-4 mb-md-0 p-3">
             <a href="#" class="fs-4 mb-2 pb-2 text-center text-deepblue table-header pe-none">Table of Contents</a>
             <hr class="divider divider-gradient-blue w-100 rounded mt-0 mb-4">
             <nav class="nav nav-pills flex-column ff-inconsolata">

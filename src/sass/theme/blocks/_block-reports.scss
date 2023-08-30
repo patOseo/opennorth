@@ -9,16 +9,17 @@
 	max-height: 92vh;
 	overflow-y: scroll;
 	font-size: .85rem;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+	border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 
 	&::-webkit-scrollbar {
-        padding: 8px;
-
+        width: 8px;
 	}
 	
 	&::-webkit-scrollbar-track {
-	    background: $lightgrey;
+	    background: #bfbfbf;
         border-radius: 1rem;
 	}
 	
