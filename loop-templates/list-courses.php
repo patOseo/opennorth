@@ -26,7 +26,9 @@ if($query->have_posts()): ?>
              </div>
          </div>
     <?php endwhile; ?>
-    <?php 
+</div>
+
+    <?php
     $pagination_args = array(
         'total' => $query->max_num_pages,
         'base' => '/online-courses/%_%',
@@ -38,7 +40,6 @@ if($query->have_posts()): ?>
         $pagination_args['current'] = $page;
     }
     understrap_pagination( $pagination_args, 'pagination ff-inconsolata fw-bold' ); ?>
-</div>
 
 <?php 
 else: 
