@@ -45,7 +45,7 @@ defined( 'ABSPATH' ) || exit;
 			<div class="main-menu-container col-12 col-xl-auto">
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<div class="row mx-0 px-0 py-4 py-xl-0 align-items-center">
-						<div class="col-6 col-xl-auto order-first px-0 me-0">
+						<div class="menu-col col-6 col-xl-auto order-first px-0 me-0">
 							<!-- The WordPress Menu goes here -->
 							<?php
 							wp_nav_menu(
@@ -65,9 +65,7 @@ defined( 'ABSPATH' ) || exit;
 
 						<div class="col-12 col-xl-auto order-3 order-xl-2 px-0 pt-4 pt-xl-0 d-block d-xl-inline search-btn align-self-top <?php if(lang_en()) { echo 'mx-xl-6'; } elseif(lang_fr()) { echo 'mx-xl-3'; } ?>">
 							<div class="row align-items-center"> 
-								<div id="searchInput" class="col-10 d-xl-none"><?php echo get_search_form(); ?></div>
-								
-								<div id="searchIcon" class="col-2 col-xl-12"><img id="searchToggler" src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-search.svg" alt="Search" width="32" height="32"></div>
+								<?php echo get_search_form(); ?>
 							</div>
 						</div>
 					

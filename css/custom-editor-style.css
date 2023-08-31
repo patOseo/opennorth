@@ -12511,6 +12511,12 @@ body a {
   }
 }
 
+@media (min-width: 1200px) {
+  #searchInput {
+    display: none;
+  }
+}
+
 #searchIcon {
   cursor: pointer;
 }

@@ -5,6 +5,12 @@
     }
 }
 
+#searchInput {
+    @include media-breakpoint-up(xl) {
+        display: none;
+    }
+}
+
 #searchIcon {
     cursor: pointer;
 }
