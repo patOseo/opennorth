@@ -20,8 +20,12 @@ if ( isset( $args['aria_label'] ) && ! empty( $args['aria_label'] ) ) {
 }
 
 if(lang_en()) {
+	$error = 'Oops! That page can&rsquo;t be found.';
+	$try = 'It looks like nothing was found at this location. Maybe try a search?';
 	$placeholder = 'Search...';
 } elseif(lang_fr()) {
+	$error = 'Oups! Cette page ne peut être trouvée.';
+	$try = 'Il semble que rien n\'a été trouvé à cet endroit. Peut-être essayer une recherche?';
 	$placeholder = 'Recherche...';
 }
 ?>
@@ -42,14 +46,14 @@ if(lang_en()) {
 
 							<p class="display-1 fw-light">404</p>
 							<h1 class="page-title">
-								<?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'understrap' ); ?>
+								<?php esc_html_e( $error, 'understrap' ); ?>
 							</h1>
 
 						</header><!-- .page-header -->
 
 						<div class="page-content text-center">
 
-							<p class="mb-4"><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'understrap' ); ?></p>
+							<p class="mb-4"><?php esc_html_e( $try, 'understrap' ); ?></p>
 
 							<div class="row justify-content-center">
 								<div class="col-lg-5">
