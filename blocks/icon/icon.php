@@ -29,7 +29,7 @@ if( !empty($block['align']) ) {
      <div class="row justify-content-center align-items-center" uk-scrollspy="target: svg; cls: uk-animation-stroke; delay: 200">
         <div class="col<?php if($heading) { echo '-4 col-md-3 col-lg-4 mb-3 mb-lg-0'; } ?> text-center"><img class="w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/images/<?= $name; ?>.svg" hidden uk-svg="stroke-animation:true"></div>
         <?php if($heading): ?>
-            <div class="col-auto col-lg-4 text-center">
+            <div class="col-auto text-center">
                 <p class="mb-0 <?php if(lang_en()) {echo 'h3'; } elseif(lang_fr()) { echo 'h4'; } ?> icon-heading"><?= $heading; ?></p> 
             </div>
         <?php endif; ?>
