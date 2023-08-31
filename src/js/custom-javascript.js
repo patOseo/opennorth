@@ -1,25 +1,30 @@
 jQuery(function($){
 
+    const navbarToggler = $('#navbarToggler');
+    const searchToggler = $('#searchToggler');
+    const searchInput = $('#searchInput');
+    const searchInputEl = $('#searchInput input');
+
     // Mobile Menu Icon
-    $('#navbarToggler').on('click', function() {
+    $(navbarToggler).on('click', function() {
         $(this).toggleClass('open');
     });
 
     // Search Menu Icon
-    $('#searchToggler').on('click', function (event) {
+    $(searchToggler).on('click', function (event) {
         event.preventDefault();
-        if ($('#searchInput').is(':visible')) {
+        if ($(searchInput).is(':visible')) {
             // If #searchInput is visible, reverse the order
-            $('#searchInput').fadeOut(100, function () {
+            $(searchInput).fadeOut(100, function () {
                 $('.menu-col').fadeIn();
             });
         } else {
             // If #searchInput is not visible, execute as before
             $('.menu-col').fadeToggle(100, function () {
-                $('#searchInput').fadeIn();
+                $(searchInput).fadeIn();
                 const x = window.scrollX;
                 const y = window.scrollY;
-                $('#searchInput input').focus();
+                $(searchInputEl).focus();
                 window.scrollTo(x, y);
             });
         }
@@ -27,8 +32,6 @@ jQuery(function($){
 
     // Hide search bar when clicking outside of it
     $(document).on('click', function(event) {
-      const searchInput = $('#searchInput');
-      const searchToggler = $('#searchToggler');
       if (searchToggler.is(':visible') && searchInput.is(':visible') && !searchInput.is(event.target) && !searchInput.has(event.target).length) {
         // Click is outside of #searchInput, hide it and show .menu-col
         searchInput.fadeOut(100, function() {

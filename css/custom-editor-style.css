@@ -12512,7 +12512,7 @@ body a {
 }
 
 @media (min-width: 1200px) {
-  #searchInput {
+  #main-nav #searchInput {
     display: none;
   }
 }
