@@ -58,12 +58,6 @@ defined( 'ABSPATH' ) || exit;
 						)
 					);
 					?>
-					<!-- <ul class="navbar-nav flex-grow-1">
-						<li class="menu-item"><a class="d-inline-block nav-link py-1 text-decoration-underline" href="#">Our Work</a></li>
-						<li class="menu-item"><a class="d-inline-block nav-link py-1 text-decoration-underline" href="#">Resources</a></li>
-						<li class="menu-item"><a class="d-inline-block nav-link py-1 text-decoration-underline" href="#">Courses</a></li>
-						<li class="menu-item"><a class="d-inline-block nav-link py-1 text-decoration-underline" href="#">Careers</a></li>
-					</ul> -->
 				</div>
 				<div class="col-6 col-lg-3">
 					<h3 class="h4 mb-4">
