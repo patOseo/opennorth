@@ -69,17 +69,7 @@ defined( 'ABSPATH' ) || exit;
 					<h3 class="h4 mb-4">
 						<?php if(lang_en()) { echo 'Contact us'; } elseif(lang_fr()) { echo 'Contactez-nous'; } ?>
 					</h3>
-					<p class="fs-6">4388 Rue Saint-Denis<br>
-					Suite 200, #216<br>
-					Montréal, QC, Canada H2J 2L1<br>
-					<a class="text-white" href="tel:1-888-750-4980">1-888-750-4980</a><br>
-					<a class="text-white" href="mailto:info@opennorth.ca">info@opennorth.ca</a>
-					</p>
-					<p class="fs-6">
-					<strong>Privacy officer:</strong><br>
-					Merlin Chatwin<br>
-					Executive Director<br>
-					<a class="text-white" href="mailto:info@opennorth.ca">info@opennorth.ca</a>
+					<?php the_field('footer_contact_info', 'option'); ?>
 					</p>
 				</div>
 
