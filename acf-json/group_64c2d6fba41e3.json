@@ -228,6 +228,32 @@
                             "append": ""
                         },
                         {
+                            "key": "field_64fb856a69ffe",
+                            "label": "Featured Image",
+                            "name": "featured_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Recommended image dimensions: 1284 x 530 pixels. If uploading an image with different dimensions, the image will be cropped in te center and stretched to fit.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "return_format": "id",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        },
+                        {
                             "key": "field_64dcd622245a5",
                             "label": "Featured Works",
                             "name": "featured_works",
@@ -478,6 +504,32 @@
                             "append": ""
                         },
                         {
+                            "key": "field_64fb85a14c690",
+                            "label": "Featured Image",
+                            "name": "featured_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Recommended image dimensions: 1284 x 530 pixels. If uploading an image with different dimensions, the image will be cropped in te center and stretched to fit.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "return_format": "id",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        },
+                        {
                             "key": "field_64dcd846245a6",
                             "label": "Featured Works",
                             "name": "featured_works",
@@ -542,5 +594,5 @@
     "description": "",
     "show_in_rest": 0,
     "acfml_field_group_mode": "advanced",
-    "modified": 1692195265
+    "modified": 1694205382
 }

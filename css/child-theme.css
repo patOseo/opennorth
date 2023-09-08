@@ -13474,6 +13474,34 @@ body a {
   margin-top: 0;
 }
 
+.featured-work-image {
+  max-height: 200px;
+}
+@media (min-width: 576px) {
+  .featured-work-image {
+    max-height: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .featured-work-image {
+    max-height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .featured-work-image {
+    max-height: 460px;
+  }
+}
+@media (min-width: 1400px) {
+  .featured-work-image {
+    max-height: 530px;
+  }
+}
+.featured-work-image image {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .home-values img[hidden] {
   display: none !important;
 }

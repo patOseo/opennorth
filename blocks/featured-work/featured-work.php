@@ -4,6 +4,7 @@ $resource = get_field('featured_resource');
 $r_id = $resource[0];
 
 if($resource): ?>
+<?php if(get_field('featured_image_layout') == 1): include_once('featured-work-image.php'); else: ?>
 <div class="featured-work-container" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 200;">
     <div class="d-flex justify-content-between lh-1 mb-4">
         <div class="ff-inconsolata fw-bold text-uppercase text-white">
@@ -42,4 +43,4 @@ if($resource): ?>
         </div>
     </div>
 </div>
-<?php endif; ?>
+<?php endif; endif; ?>

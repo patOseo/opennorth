@@ -3,8 +3,63 @@
     "title": "Block – Featured Work",
     "fields": [
         {
+            "key": "field_64fb778e2725c",
+            "label": "Featured Image Layout",
+            "name": "featured_image_layout",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_64fb77ad2725d",
+            "label": "Upload Image",
+            "name": "image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Recommended image dimensions: 1284 x 530 pixels. If uploading an image with different dimensions, the image will be cropped in te center and stretched to fit.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64fb778e2725c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
             "key": "field_64d6725b0b4fe",
-            "label": "Featured Resource",
+            "label": "Select Resource",
             "name": "featured_resource",
             "aria-label": "",
             "type": "relationship",
@@ -61,5 +116,5 @@
     "description": "",
     "show_in_rest": 0,
     "acfml_field_group_mode": "translation",
-    "modified": 1692149412
+    "modified": 1694204943
 }

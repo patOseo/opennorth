@@ -1,0 +1,23 @@
+.featured-work-image {
+    max-height: 200px;
+
+    @include media-breakpoint-up(sm) {
+        max-height: 300px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        max-height: 400px;
+    }
+    
+    @include media-breakpoint-up(xl) {
+        max-height: 460px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        max-height: 530px;
+    }
+    
+    image {
+        object-fit: cover;
+    }
+}

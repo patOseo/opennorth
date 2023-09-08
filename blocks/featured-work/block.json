@@ -6,7 +6,7 @@
     "icon": "pressthis",
     "keywords": ["resources", "work", "featured"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "featured-work.php"
     },
     "align": "full"
