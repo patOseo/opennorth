@@ -33,7 +33,7 @@ if($resource): ?>
                     </div>
                     <h3 class="h2 fw-light"><?php echo get_the_title($r_id); ?></h3>
                     <?php if(get_field('subtitle', $r_id)): ?>
-                        <div class="featured-work-subtitle mt-3 mb-4"><?php the_field('subtitle', $r_id); ?></div>
+                        <div class="featured-work-subtitle mt-3 mb-4"><?php echo get_field('subtitle', $r_id); ?></div>
                     <?php endif; ?>
                     <a class="btn btn-primary stretched-link" href="<?php echo get_permalink($r_id); ?>">
                         <?php if(lang_en()) { echo 'Read more'; } elseif(lang_fr()) { echo 'Lire la suite'; } ?>

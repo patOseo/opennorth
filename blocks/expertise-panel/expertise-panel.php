@@ -5,7 +5,7 @@ $i = 1;
 
 <div class="rounded-5 expertise-panels-container px-lg-6 py-5" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 200">
     <div class="expertise-panels py-2 px-4 py-lg-6 px-lg-6" uk-scrollspy="target: .expertise-panel; cls: uk-animation-slide-bottom-medium; delay: 200">
-        <p class="ff-inconsolata text-uppercase fw-bold text-white"><?php the_field('heading'); ?></p>
+        <p class="ff-inconsolata text-uppercase fw-bold text-white"><?php echo get_field('heading'); ?></p>
         <div class="row">
             <?php foreach($columns as $col): $panel = get_field($col . '_column'); ?>
                 <div class="col-lg-6 mb-6 mb-lg-0">

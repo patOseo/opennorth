@@ -29,7 +29,7 @@ defined( 'ABSPATH' ) || exit;
 					<img class="mb-5" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-full-white.svg" alt="Open North | Nord Ouvert" width="480" height="44">
 					<div class="mb-5 w-75">
 						<h3 class="h4 mb-4"><?php if(lang_en()) { echo 'About us'; } elseif(lang_fr()) { echo 'À propos de Nord Ouvert'; } ?></h3>
-						<p class="fs-6"><?php the_field('footer_about', 'option'); ?></p>
+						<p class="fs-6"><?php echo get_field('footer_about', 'option'); ?></p>
 					</div>
 					<div class="footer-social mb-5 mb-lg-0">
 						<a class="text-decoration-none" href="https://www.linkedin.com/company/open-north/" target="_blank" rel="noopener,noreferrer">
@@ -63,7 +63,7 @@ defined( 'ABSPATH' ) || exit;
 					<h3 class="h4 mb-4">
 						<?php if(lang_en()) { echo 'Contact us'; } elseif(lang_fr()) { echo 'Contactez-nous'; } ?>
 					</h3>
-					<?php the_field('footer_contact_info', 'option'); ?>
+					<?php echo get_field('footer_contact_info', 'option'); ?>
 					</p>
 				</div>
 

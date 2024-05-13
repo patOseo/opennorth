@@ -7,12 +7,12 @@
             <hr class="divider divider-gradient-blue w-100 rounded mt-0 mb-4">
             <nav class="nav nav-pills flex-column ff-inconsolata">
                 <?php $sec = 1; while(have_rows('sections')): the_row(); ?>
-                    <a href="#section-<?= $sec; ?>" class="nav-link fw-bold"><?php the_sub_field('section_title'); ?></a>
+                    <a href="#section-<?= $sec; ?>" class="nav-link fw-bold"><?php echo get_sub_field('section_title'); ?></a>
 
                     <?php if(have_rows('sub_section')): ?>
                         <nav class="nav nav-pills flex-column">
                         <?php $subsec = 1; while(have_rows('sub_section')): the_row(); ?>
-                            <a href="#section-<?= $sec; ?>-<?= $subsec; ?>" class="nav-link text-capitalize ms-3 my-1"><?php the_sub_field('sub_section_title'); ?></a>
+                            <a href="#section-<?= $sec; ?>-<?= $subsec; ?>" class="nav-link text-capitalize ms-3 my-1"><?php echo get_sub_field('sub_section_title'); ?></a>
                         <?php $subsec++; endwhile; ?>
                         </nav>
                     <?php endif; ?>
@@ -25,16 +25,16 @@
         <div class="entry-content h-100 position-relative fs-5 fw-light uk-animation-slide-bottom-medium" data-bs-spy="scroll" data-bs-target="#tableContents" data-bs-offset="50" tabindex="0">
             <?php $i = 1; while(have_rows('sections')): the_row(); ?>
                 <div class="report-section mb-4" id="section-<?= $i; ?>">
-                    <h2 class="section-title bg-gradient-blue text-white <?php if($i != 1) { echo 'mt-6 mb-4'; } else { echo 'mb-4'; } ?> p-3 rounded-3"><?php the_sub_field('section_title'); ?></h2>
-                    <div class="section-content"><?php the_sub_field('content'); ?></div>
+                    <h2 class="section-title bg-gradient-blue text-white <?php if($i != 1) { echo 'mt-6 mb-4'; } else { echo 'mb-4'; } ?> p-3 rounded-3"><?php echo get_sub_field('section_title'); ?></h2>
+                    <div class="section-content"><?php echo get_sub_field('content'); ?></div>
 
                     <?php if(have_rows('sub_section')): ?>
 
                         <?php $ii = 1; while(have_rows('sub_section')): the_row(); ?>
 
                             <div class="sub-section mb-4" id="section-<?= $i; ?>-<?= $ii; ?>">
-                                <h3 class="section-subtitle bg-lightgrey mt-6 mb-4 p-3 rounded-3"><?php the_sub_field('sub_section_title'); ?></h3>
-                                <div class="sub-section-content"><?php the_sub_field('sub_section_content'); ?></div>
+                                <h3 class="section-subtitle bg-lightgrey mt-6 mb-4 p-3 rounded-3"><?php echo get_sub_field('sub_section_title'); ?></h3>
+                                <div class="sub-section-content"><?php echo get_sub_field('sub_section_content'); ?></div>
                             </div>
 
                         <?php $ii++; endwhile; ?>

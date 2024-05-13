@@ -4,7 +4,7 @@ $tabids = array();
 ?>
 
 <div class="expertise-tabs">
-    <p class="ff-inconsolata text-primary fw-bold text-uppercase"><?php the_field('heading'); ?></p>
+    <p class="ff-inconsolata text-primary fw-bold text-uppercase"><?php echo get_field('heading'); ?></p>
 
     <div class="block-tabs row gx-2 gx-lg-5 border-0 mb-6" id="teamTabs" role="tablist">
         <?php foreach($tabs as $i => $tab): $group = get_field($tab); ?>
@@ -30,7 +30,7 @@ $tabids = array();
                     <div class="tab-pane fade <?php if($i == array_key_first($tabs)) { echo 'show active'; } ?>" id="<?= $tabids[$i]; ?>" role="tabpanel" aria-labelledby="<?= $tabids[$i]; ?>">
                         <div class="row mb-6">
                             <div class="col-lg-4 mb-4 mb-lg-0">
-                                <div uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 200; repeat: true" class="pe-lg-6 lh-lg"><?php the_sub_field('intro_text'); ?></div>
+                                <div uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 200; repeat: true" class="pe-lg-6 lh-lg"><?php echo get_sub_field('intro_text'); ?></div>
                             </div>
                             <div class="col-lg-8" uk-scrollspy="target: .expertise-element-row; cls: uk-animation-slide-bottom-medium; delay: 200; repeat: true ">
                                 <p class="text-secondary ff-inconsolata text-uppercase fw-bold mb-4">
@@ -43,8 +43,8 @@ $tabids = array();
                                                 <svg class="mb-3" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="8" cy="8" r="7" stroke="#F94A2D" stroke-width="2"/>
                                                 </svg>
-                                                <h4><?php the_sub_field('heading'); ?></h4>
-                                                <div class="text-darkgrey fs-6"><?php the_sub_field('content'); ?></div>
+                                                <h4><?php echo get_sub_field('heading'); ?></h4>
+                                                <div class="text-darkgrey fs-6"><?php echo get_sub_field('content'); ?></div>
                                             </div>
                                         </div>
                                     <?php endwhile; ?>

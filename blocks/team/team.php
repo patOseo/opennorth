@@ -7,8 +7,8 @@ $members = array('team', 'board');
         <?php foreach($members as $i => $member): ?>
             <div class="block-tab col-6 text-start <?php if($i == array_key_first($members)) { echo 'active'; } ?>" id="<?= $member; ?>Tab" role="presentation" data-bs-toggle="tab" data-bs-target="#<?= $member; ?>Pane"> 
                 <div class="p-3 p-lg-6 block-tab-content rounded-5 bg-lightgrey h-100">
-                    <div class="h2 tab-title mb-0 px-0 text-darkgrey"><?php the_field($member . '_title', 'option'); ?></div>
-                    <p class="tab-title tab-title-mobile-sm mb-0 fw-normal text-darkgrey"><?php the_field($member . '_subtitle', 'option'); ?></p>
+                    <div class="h2 tab-title mb-0 px-0 text-darkgrey"><?php echo get_field($member . '_title', 'option'); ?></div>
+                    <p class="tab-title tab-title-mobile-sm mb-0 fw-normal text-darkgrey"><?php echo get_field($member . '_subtitle', 'option'); ?></p>
                 </div>
             </div>
         <?php endforeach; ?>
@@ -19,7 +19,7 @@ $members = array('team', 'board');
             <div class="tab-pane fade <?php if($i == array_key_first($members)) { echo 'show active'; } ?>" id="<?= $member; ?>Pane" role="tabpanel" aria-labelledby="<?= $member; ?>Tab" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 200">
                 <div class="row mb-6">
                     <div class="col-lg-9">
-                        <div class="py-4 fs-4"><?php the_field($member . '_intro', 'option'); ?></div>
+                        <div class="py-4 fs-4"><?php echo get_field($member . '_intro', 'option'); ?></div>
                     </div>
                 </div>
 

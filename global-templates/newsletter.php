@@ -14,8 +14,8 @@ if(get_field('blue_background')) {
 	<div class="newsletter-box d-inline-block mx-4 mx-xl-6 my-5 p-5 p-md-6 rounded-3 <?= $bg; ?>" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 200; repeat: true">
 	    <div class="row justify-content-between align-items-center">
 	        <div class="col-lg-6 col-xl-6 mb-5 mb-lg-0">
-	            <p class="h2 mb-4 <?= $textcolor; ?>"><?php the_field('newsletter_heading', 'option'); ?></p>
-	            <p class="h5 mb-0 fw-light lh-base <?= $textcolor; ?>"><?php the_field('newsletter_subheading', 'option'); ?></p>
+	            <p class="h2 mb-4 <?= $textcolor; ?>"><?php echo get_field('newsletter_heading', 'option'); ?></p>
+	            <p class="h5 mb-0 fw-light lh-base <?= $textcolor; ?>"><?php echo get_field('newsletter_subheading', 'option'); ?></p>
 	        </div>
 	        <div class="col-lg-5 col-xl-4">
 	            <form class="subscription" action="https://opennorth.us2.list-manage.com/subscribe/post?u=a602fac79ef3dc584bf1a2743&amp;id=1e0c02fa29" method="post" target="_blank" novalidate="" _lpchecked="1">

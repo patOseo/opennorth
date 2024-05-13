@@ -29,7 +29,7 @@ $projects = apply_filters('wpml_object_id', 98, 'resource_type', false);
 
 	    <?php the_title( '<h1 class="entry-title mb-4 fw-light display-5">', '</h1>' ); ?>
         <?php if(get_field('subtitle')): ?>
-            <div class="subtitle mb-0 h4 fw-light"><?php the_field('subtitle'); ?></div>
+            <div class="subtitle mb-0 h4 fw-light"><?php echo get_field('subtitle'); ?></div>
         <?php endif; ?>
 
         <?php if(have_rows('authors')): $authors = array(); ?>
