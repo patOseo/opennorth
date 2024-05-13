@@ -13422,6 +13422,15 @@ body a {
   color: #00078A;
 }
 
+.member-photo img {
+  min-width: 180px;
+  max-width: 180px;
+  min-height: 180px;
+  max-height: 180px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .expertise-panels-container {
   background: linear-gradient(180deg, rgba(237, 65, 35, 0.93) 0, rgba(221, 37, 5, 0.96) 100%), url("/wp-content/themes/opennorth/images/background-street.jpg");
   background-repeat: no-repeat;
