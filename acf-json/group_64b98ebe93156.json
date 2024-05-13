@@ -120,7 +120,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 1,
+                    "wpml_cf_preferences": 0,
                     "return_format": "id",
                     "library": "all",
                     "min_width": "",
@@ -147,7 +147,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 1,
+                    "wpml_cf_preferences": 0,
                     "default_value": "",
                     "maxlength": "",
                     "placeholder": "",
@@ -169,7 +169,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 3,
+                    "wpml_cf_preferences": 0,
                     "default_value": "",
                     "maxlength": "",
                     "placeholder": "",
@@ -191,7 +191,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 1,
+                    "wpml_cf_preferences": 0,
                     "default_value": "",
                     "placeholder": "",
                     "parent_repeater": "field_64b98ed603971"
@@ -316,7 +316,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 1,
+                    "wpml_cf_preferences": 0,
                     "return_format": "id",
                     "library": "all",
                     "min_width": "",
@@ -343,7 +343,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 1,
+                    "wpml_cf_preferences": 0,
                     "default_value": "",
                     "maxlength": "",
                     "placeholder": "",
@@ -365,7 +365,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 3,
+                    "wpml_cf_preferences": 0,
                     "default_value": "",
                     "maxlength": "",
                     "placeholder": "",
@@ -387,7 +387,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 1,
+                    "wpml_cf_preferences": 0,
                     "default_value": "",
                     "placeholder": "",
                     "parent_repeater": "field_64b98f5203977"
@@ -414,5 +414,5 @@
     "description": "",
     "show_in_rest": 0,
     "acfml_field_group_mode": "advanced",
-    "modified": 1715623889
+    "modified": 1715624315
 }
