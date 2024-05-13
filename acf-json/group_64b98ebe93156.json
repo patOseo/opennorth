@@ -97,7 +97,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 3,
+            "wpml_cf_preferences": 0,
             "layout": "table",
             "pagination": 0,
             "min": 0,
@@ -293,7 +293,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 3,
+            "wpml_cf_preferences": 0,
             "layout": "table",
             "pagination": 0,
             "min": 0,
@@ -414,5 +414,5 @@
     "description": "",
     "show_in_rest": 0,
     "acfml_field_group_mode": "advanced",
-    "modified": 1692149503
+    "modified": 1715623889
 }
