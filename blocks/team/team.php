@@ -34,7 +34,7 @@ $members = array('team', 'board');
                             <div class="col mb-5">
                                 <div class="member text-center position-relative">
                                     <div class="member-photo mb-4 d-inline-block position-relative">
-                                        <?php echo wp_get_attachment_image($photo, 'team', '', array('class' => 'rounded-circle')); ?>
+                                        <?php echo wp_get_attachment_image($photo, 'team', '', array('class' => 'rounded-circle member-img')); ?>
                                         <?php if($linkedin): ?>
                                         <div class="member-linkedin position-absolute bottom-0 end-0 rounded-circle me-2 p-2 lh-1 bg-white text-center">
                                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-linkedin-black.svg" width="24" height="24" alt="LinkedIn icon">
